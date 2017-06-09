@@ -1,0 +1,16 @@
+1. When running the script from the command line you need to set an environment variable, like:
+
+```
+export XDEBUG_CONFIG="idekey=session_name"
+php myscript.php
+```
+
+2. You can also configure the xdebug.remote_host, xdebug.remote_port, xdebug.remote_mode and xdebug.remote_handler in this same environment variable as long as you separate the values by a space:
+
+```
+export XDEBUG_CONFIG="idekey=session_name remote_host=localhost profiler_enable=1"
+```
+
+3. All settings that you can set through the XDEBUG_CONFIG setting can also be set with normal php.ini settings.
+If you want to debug a script started through a web browser, simply add XDEBUG_SESSION_START=session_name as parameter to the URL. Instead of using a GET parameter, you can also set XDEBUG_SESSION_START as a POST parameter, or through a cookie. Refer to the next section to read on how debug sessions work from within a browser window.
+An alternative way to activate the debugger while running PHP through a web server is by installing one of the following four browser extensions. Each of them allows you to simply enable the debugger by clicking on one button. When these extensions are active, they set the XDEBUG_SESSION cookie directly, instead of going through XDEBUG_SESSION_START as described in HTTP Debug Sessions further on. 
