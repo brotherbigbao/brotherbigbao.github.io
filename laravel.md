@@ -61,3 +61,12 @@ class AppServiceProvider extends ServiceProvider
     }
 }
 ```
+
+##### queue:work & queue:listen
+
+The most important difference is that queue:work –daemon does not restart the framework on each job, but queue:listen does. In fact, listen starts a whole new Laravel process for each job.
+
+Try for yourself: Open 2 terminals and run work –daemon in one and listen in the other. The work window will execute jobs much faster than listen.
+
+- [stackoverflow.com](http://stackoverflow.com/questions/26048698/what-is-the-difference-between-queuework-daemon-and-queuelisten)
+- [reddit.com](https://www.reddit.com/r/laravel/comments/5955q1/queuework_vs_queuelisten/?st=iztkq6cg&sh=087c155b)
