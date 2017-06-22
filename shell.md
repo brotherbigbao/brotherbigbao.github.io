@@ -7,3 +7,5 @@ su - git -c /data/website/gogs/gogs web
 - su 只是切换了root身份，但Shell环境仍然是普通用户的Shell
 - su - 用户和Shell环境一起切换成root身份了。只有切换了Shell环境才不会出现PATH环境变量错误，应该使用此命令
 
+##### 相关链接
+[linux特殊文件权限SUID,SGID,SBIT](http://www.cnblogs.com/javaee6/p/4026108.html)
