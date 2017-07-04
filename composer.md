@@ -9,3 +9,6 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com
 ```
 composer config repo.packagist composer https://packagist.phpcomposer.com
 ```
+
+##### Composer版本符号
+[https://getcomposer.org/doc/articles/versions.md](https://getcomposer.org/doc/articles/versions.md)
