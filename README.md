@@ -6,3 +6,4 @@
 - [Git](git.md)
 - [MacOS](macos.md)
 - [Composer](composer.md)
+- [MySQL](mysql.md)
