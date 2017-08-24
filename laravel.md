@@ -32,24 +32,19 @@ $trailerCollection = $builder->get();
 ```
 
 
-##### 打印SQL
+##### 打印SQL及注册日志
 ```
-class AppServiceProvider extends ServiceProvider
-{
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        DB::listen(function($sql, $bindings, $time) {
-            echo $sql, "\n";
-            print_r($bindings);
-            echo $time, "\n";
-        });
-    }
+<?php
 
+namespace App\Providers;
+
+use Illuminate\Support\ServiceProvider;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+use Monolog\Formatter\LineFormatter;
+
+class LogServiceProvider extends ServiceProvider
+{
     /**
      * Register any application services.
      *
@@ -57,7 +52,29 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $logModules = ['system', 'request', 'command', 'queue', 'sql'];
+        foreach ($logModules as $lm) {
+            $this->app->singleton('log.' . $lm, function () use ($lm) {
+                $handle = (new StreamHandler(env('STORAGE_PATH', storage_path()) . '/logs/' . $lm . '/' . date('Y-m-d') . '.log', Logger::DEBUG))
+                    ->setFormatter(new LineFormatter(null, null, true, true));
+                return new Logger($lm, [$handle]);
+            });
+        }
+    }
+
+    public function boot()
+    {
+        // 调试模式打开sql记录
+        if (env('APP_DEBUG')) {
+            app('db')->enableQueryLog();
+            app('db')->listen(function ($query) {
+                $sql = $query->sql;
+                foreach ($query->bindings as $binding) {
+                    $sql = str_replace_first('?', $binding, $sql);
+                }
+                app('log.sql')->debug($sql);
+            });
+        }
     }
 }
 ```
