@@ -7,3 +7,4 @@
 - [MacOS](macos.md)
 - [Composer](composer.md)
 - [MySQL](mysql.md)
+- [homebrew](homebrew.md)
