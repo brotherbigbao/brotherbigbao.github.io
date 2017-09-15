@@ -1,5 +1,7 @@
 # Nginx reverse proxying
 
+> 转自: 《Mastering NGINX》Second Edition
+
 Introducing reverse proxying
 NGINX can serve as a reverse proxy by terminating requests from clients and
 opening new ones to its upstream servers. On the way, the request can be split
