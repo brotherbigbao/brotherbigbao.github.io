@@ -9,3 +9,4 @@
 - [MySQL](mysql.md)
 - [homebrew](homebrew.md)
 - [Nginx](nginx.md)
+- [Java](java.md)
