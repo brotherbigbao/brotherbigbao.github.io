@@ -1,7 +1,7 @@
 ## homebrew 操作指南
 
 ##### php56 php71共存问题
-
+**Self test**
 1. brew install php56; brew install php71 
 2. 更改php71 fpm配置端口号到9001
 3. brew services start php56; brew services start php71
@@ -11,7 +11,7 @@
 
 
 
-##### php多版本共存
+##### php多版本共存转载
 **PHP Installation**
 > We will proceed by installing PHP 5.6, PHP 7.0, PHP 7.1 and PHP 7.2 and using a simple script to switch between them as we need.
 
