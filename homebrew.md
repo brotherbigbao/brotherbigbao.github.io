@@ -15,7 +15,7 @@
 **PHP Installation**
 > We will proceed by installing PHP 5.6, PHP 7.0, PHP 7.1 and PHP 7.2 and using a simple script to switch between them as we need.
 
-You can get a full list of available options to include by typing brew options php56, for example. In this example we are just including Apache support via --with-httpd to build the required PHP modules for Apache.
+You can get a full list of available options to include by typing **brew options php56**, for example. In this example we are just including Apache support via --with-httpd to build the required PHP modules for Apache.
 ```
 $ brew install php56 --with-httpd
 $ brew unlink php56
