@@ -1,18 +1,18 @@
 ## laravel日常使用
 
-##### laravel安装器
+### laravel安装器
 ```
 composer global require "laravel/installer"
 laravel new blog
 ```
 
-##### composer create-project
+### composer create-project
 ```
 composer create-project laravel/laravel your-project-name --prefer-dist "5.1.*"
 ```
 
 
-##### 查询构造器 Illuminate\Database\Eloquent\Model::newQuery()
+### 查询构造器 Illuminate\Database\Eloquent\Model::newQuery()
 ```$xslt
 $builder = $this->trailer->newQuery();
 foreach($movieCollection as $key=>$obj) {
@@ -32,7 +32,7 @@ $trailerCollection = $builder->get();
 ```
 
 
-##### 打印SQL及注册日志
+### 打印SQL及注册日志
 ```
 <?php
 
@@ -79,7 +79,7 @@ class LogServiceProvider extends ServiceProvider
 }
 ```
 
-##### queue:work & queue:listen
+### queue:work & queue:listen
 
 The most important difference is that queue:work –daemon does not restart the framework on each job, but queue:listen does. In fact, listen starts a whole new Laravel process for each job.
 
@@ -89,7 +89,7 @@ Try for yourself: Open 2 terminals and run work –daemon in one and listen in t
 - [reddit.com](https://www.reddit.com/r/laravel/comments/5955q1/queuework_vs_queuelisten/?st=iztkq6cg&sh=087c155b)
 
 
-##### Eloquent casts array return null
+### Eloquent casts array return null
 override castAttribute().
 ```
 protected function castAttribute($key, $value)
