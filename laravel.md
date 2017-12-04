@@ -87,3 +87,28 @@ Try for yourself: Open 2 terminals and run work –daemon in one and listen in t
 
 - [stackoverflow.com](http://stackoverflow.com/questions/26048698/what-is-the-difference-between-queuework-daemon-and-queuelisten)
 - [reddit.com](https://www.reddit.com/r/laravel/comments/5955q1/queuework_vs_queuelisten/?st=iztkq6cg&sh=087c155b)
+
+
+##### Eloquent casts array return null
+override castAttribute().
+```
+protected function castAttribute($key, $value)
+{
+    if ($this->getCastType($key) == 'array' && is_null($value)) {
+        return [];
+    }
+
+    return parent::castAttribute($key, $value);
+}
+```
+
+You can set a default value to your archive table column params so that the value is never null. Here is an example:
+```
+Schema::create('archives', function (Blueprint $table) {
+    $table->increments('id');
+    $table->string('params')->default('[]');
+    $table->timestamps();
+});
+```
+more click this link:
+[laracasts.com](https://laracasts.com/discuss/channels/eloquent/eloquent-casts-array-returns-null-instead-of-empty-array)
