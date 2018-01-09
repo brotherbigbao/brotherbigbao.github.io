@@ -10,3 +10,8 @@ su - git -c /data/website/gogs/gogs web
 ##### 收藏链接
 - [linux特殊文件权限SUID,SGID,SBIT](http://www.cnblogs.com/javaee6/p/4026108.html)
 - [让进程在后台可靠运行的几种方法screen,nohup,&](https://www.ibm.com/developerworks/cn/linux/l-cn-nohup/index.html)
+
+##### grep查询整个项目并输出文件路径行号
+```
+grep -rni '关键词' *
+```
