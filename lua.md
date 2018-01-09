@@ -1,0 +1,17 @@
+# Lua特性
+- Conditional tests (e.g., conditions in control structures) consider both the Boolean false and nil
+  as false and anything else as true. In particular, Lua considers both zero and the empty string as true in
+  conditional tests.
+  
+- A useful Lua idiom is x = x or v, which is equivalent to
+```lua
+if not x then x = v end
+```
+- The not operator always gives a Boolean value:
+```
+ > not nil --> true
+ > not false --> true
+ > not 0 --> false
+ > not not 1 --> true
+ > not not nil --> false
+```
