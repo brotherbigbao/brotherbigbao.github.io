@@ -37,3 +37,15 @@ apt-cache depends package-name
 ```
 apt-cache policy packagename
 ```
+
+##### 建议使用apt
+```
+man 8 apt
+
+apt provides a high-level commandline interface for the package management system. It is intended as an end user interface and enables
+some options better suited for interactive usage by default compared to more specialized APT tools like apt-get(8) and apt-cache(8).
+
+Much like apt itself, its manpage is intended as an end user interface and as such only mentions the most used commands and options
+partly to not duplicate information in multiple places and partly to avoid overwhelming readers with a cornucopia of options and
+details.
+```
