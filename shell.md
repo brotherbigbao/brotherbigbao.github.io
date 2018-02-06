@@ -15,3 +15,25 @@ su - git -c /data/website/gogs/gogs web
 ```
 grep -rni '关键词' *
 ```
+
+##### ubuntu安装automake, 会自动安装autoconf
+```
+apt install automake
+```
+
+##### ubuntu查看软件包依赖
+```
+apt-cache rdepends packagename
+apt-cache showpkg <pkgname>
+```
+> [How to list dependent packages (reverse dependencies)](https://askubuntu.com/questions/128524/how-to-list-dependent-packages-reverse-dependencies)
+
+```
+apt-cache depends package-name
+```
+> [How can I check dependency list for a deb package](https://askubuntu.com/questions/80655/how-can-i-check-dependency-list-for-a-deb-package/80656)
+
+##### ubuntu查看软件使用的源
+```
+apt-cache policy packagename
+```
