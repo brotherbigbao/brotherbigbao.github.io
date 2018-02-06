@@ -10,3 +10,10 @@ $useStaticLoader = PHP_VERSION_ID >= 50600 && !defined('HHVM_VERSION') && (!func
 ```
 > [Laravel 5.6 Will Remove the Artisan Optimize Command](https://laravel-news.com/laravel-5-6-removes-artisan-optimize)
 > [Speeding-up autoloading on PHP 5.6 & 7.0+ for everyone](https://blog.blackfire.io/speeding-up-autoloading-on-php-5-6-7-0-for-everyone.html)
+
+#### 编译github php-src
+```
+./buildconf  #生成configure
+./configure  
+make && make install
+```
