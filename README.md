@@ -11,5 +11,7 @@
 - [homebrew](homebrew.md)
 - [Nginx](nginx.md)
 - [Java](java.md)
+- [MyBatis](mybatis.md)
 - [Docker](docker.md)
 - [Lua](lua.md)
+- [Ubuntu](ubuntu.md)
