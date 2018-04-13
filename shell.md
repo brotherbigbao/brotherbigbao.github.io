@@ -49,3 +49,14 @@ Much like apt itself, its manpage is intended as an end user interface and as su
 partly to not duplicate information in multiple places and partly to avoid overwhelming readers with a cornucopia of options and
 details.
 ```
+
+##### 生成ssh-key
+```
+ssh-keygen -t rsa
+```
+
+##### 生成openssl公私钥
+```
+openssl genrsa -out rsa_private_key.pem 1024
+openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem
+```
