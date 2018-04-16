@@ -1,15 +1,18 @@
 ## Welcome to Liuyibao's GitHub Pages
 
-- [PHP](php.md)
+- [PHP](php/php.md)
 - [Laravel](laravel.md)
-- [Shell](shell.md)
+- [Composer](php/composer.md)
+- [MySQL](mysql.md)
+
+
+- [Shell](shell/shell.md)
 - [XDebug](xdebug.md)
 - [Git](git.md)
 - [MacOS](macos.md)
-- [Composer](composer.md)
-- [MySQL](mysql.md)
+
 - [homebrew](homebrew.md)
-- [Nginx](nginx.md)
+- [Nginx](nginx/nginx.md)
 - [Java](java.md)
 - [MyBatis](mybatis.md)
 - [Docker](docker.md)
