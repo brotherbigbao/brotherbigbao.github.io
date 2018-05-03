@@ -11,6 +11,8 @@
 - [Git](git.md)
 - [MacOS](macos.md)
 
+- [Golang](golang.md)
+
 - [homebrew](homebrew.md)
 - [Nginx](nginx/nginx.md)
 - [Java](java.md)
