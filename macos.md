@@ -1,2 +1,10 @@
 #### 打开软件安装限制
 sudo spctl --master-disable
+
+#### 升级10.13后homebrew install和cc --version执行报错
+
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+执行下面命令重新安装xcode command line developer tools即可:
+
+xcode-select --install
