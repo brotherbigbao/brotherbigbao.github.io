@@ -6,3 +6,17 @@
 'coach_id','count(*) as class_number','sum(apply_number) as total_apply_number'
 类似这个查询只有coach_id映射到属性里，遍历的时候只有coach_id这个属性， 直接返回数组就不存在这个问题
 ```
+
+
+- yii active record 类型转换
+
+```
+属性类型转换（Attributes Typecasting）
+在查询结果填充 yii\db\ActiveRecord 时，将自动对其属性值执行类型转换，基于 数据库表模式 中的信息。 这允许从数据表中获取数据， 声明为整型的，使用 PHP 整型填充 ActiveRecord 实例，布尔值（boolean）的也用布尔值填充，等等。 但是，类型转换机制有几个限制：
+
+浮点值不被转换，并且将被表示为字符串，否则它们可能会使精度降低。
+整型值的转换取决于您使用的操作系统的整数容量。尤其是： 声明为“无符号整型”或“大整型”的列的值将仅转换为 64 位操作系统的 PHP 整型， 而在 32 位操作系统中 - 它们将被表示为字符串。
+值得注意的是，只有在从查询结果填充 ActiveRecord 实例时才执行属性类型转换。 而从 HTTP 请求加载的值或直接通过属性访问赋值的，没有自动转换。 在准备用于在 ActiveRecord 保存时，准备 SQL 语句还使用了表模式，以确保查询时 值绑定到具有正确类型的。但是，ActiveRecord 实例的属性值不会 在保存过程中转换
+```
+
+> https://www.yiiframework.com/doc/guide/2.0/zh-cn/db-active-record
