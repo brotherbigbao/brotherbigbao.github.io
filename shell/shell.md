@@ -65,3 +65,15 @@ openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem
 ```
 ls *.JPG | xargs -n1 -I {} convert -resize 800X600 {} {}
 ```
+
+##### 查看指定PID的几种命令
+
+```
+top -p 10997
+ps -ef | grep xxxx
+ps -aux | grep xxxx
+cat /proc/10997/status  #VmRSS是内存占比
+```
+
+> https://www.cnblogs.com/EasonJim/p/8040782.html
+
