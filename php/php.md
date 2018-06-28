@@ -73,3 +73,14 @@ Conclusions:
 5. Sometimes, pass by reference could be at the choice of the caller, NOT the function definitition. PHP doesn't allow it, but it
    would be meaningful for the caller to decide to pass data in as a reference. i.e. "I'm done with the variable, it's OK to stomp
    on it in memory".
+   
+   
+#### null值取下标不会报错, 但最好不要这么干, php5 php7都是这样
+
+```php
+$a = null;
+echo $a['name']; //不会报错
+
+$b = [];
+echo $b['name']; //会报notice
+```
