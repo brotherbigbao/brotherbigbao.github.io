@@ -122,3 +122,9 @@ You need to alias use Model\Entity\Foo; when you import it because it conflicts 
 [原始连接https://github.com/sebastianbergmann/php-code-coverage/issues/383#issuecomment-139998575](https://github.com/sebastianbergmann/php-code-coverage/issues/383#issuecomment-139998575)
 
 > PHP7.0下测试不会报错, 5.6会报错, 应该是PHP的Bug
+
+
+#### 十个 PHP 开发者最容易犯的错误
+
+- [十个 PHP 开发者最容易犯的错误](https://laravel-china.org/topics/9104/the-most-easy-mistakes-made-by-ten-php-developers)
+- [Buggy PHP Code: The 10 Most Common Mistakes PHP Developers Make](https://www.toptal.com/php/10-most-common-mistakes-php-programmers-make)
