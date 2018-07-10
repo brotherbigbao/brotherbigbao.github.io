@@ -19,4 +19,4 @@
 - [MyBatis](mybatis.md)
 - [Docker](docker.md)
 - [Lua](lua.md)
-- [Ubuntu](ubuntu.md)
+- [Linux](linux/linux.md)
