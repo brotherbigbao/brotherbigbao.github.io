@@ -84,3 +84,41 @@ echo $a['name']; //不会报错
 $b = [];
 echo $b['name']; //会报notice
 ```
+
+
+#### PHP Fatal error: Cannot use Foo\Bar as Bar because the name is already in use
+
+```
+/*
+ * Example:
+ */
+
+// in src/Model/Entity/Foo.php
+namespace Model\Entity;
+
+class Foo {
+}
+
+// in src/Model/Service/Foo.php
+namespace Model\Service;
+
+class Foo {
+}
+
+// in src/Model/Service/Bar.php
+namespace Model\Service;
+
+use Model\Entity\Foo; // raises fatal error with phpunit
+
+class Bar {
+}
+This code is executable by PHP. PHP seems to prefer the use statement in src/Model/Service/Bar.php, but PHPUnit code coverage evaluates namespace first.
+```
+
+```
+You need to alias use Model\Entity\Foo; when you import it because it conflicts with an exisiting class. The only reason you might not see the error in php is if that other class hasn't been autoloaded yet.
+```
+
+[原始连接https://github.com/sebastianbergmann/php-code-coverage/issues/383#issuecomment-139998575](https://github.com/sebastianbergmann/php-code-coverage/issues/383#issuecomment-139998575)
+
+> PHP7.0下测试不会报错, 5.6会报错, 应该是PHP的Bug
