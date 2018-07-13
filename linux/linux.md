@@ -98,3 +98,83 @@ dpkg -l |grep -i "软件包名" //查看系统中与"软件包名"相关联的�
 
 apt-cache policy xxxx
 ```
+
+### man 命令
+
+```
+Linux提供了丰富的帮助手册，使用Linux man命令来查看一些不熟悉的命令的使用方法,还可以用来查询系统库文件中的一些函数定义和使用方法。
+
+Linux man中的man就是manual的缩写，用来查看系统中自带的各种参考手册，但是手册页分为好几个部分，如下所示：
+
+1   Executable programs or shell commands
+
+2   System calls (functions provided by the kernel)
+
+3   Library calls (functions within program libraries)
+
+4   Special files (usually found in /dev)
+
+5   File formats and conventions eg /etc/passwd
+
+6   Games
+
+7   Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)
+
+8   System administration commands (usually only for root)
+
+9   Kernel routines [Non standard]
+
+----------------------
+
+解释一下,
+
+1是普通的命令
+
+2是系统调用,如open,write之类的(通过这个，至少可以很方便的查到调用这个函数，需要加什么头文件)
+
+3是库函数,如printf,fread
+
+4是特殊文件,也就是/dev下的各种设备文件
+
+5是指文件的格式,比如passwd,就会说明这个文件中各个字段的含义
+
+6是给游戏留的,由各个游戏自己定义
+
+7是附件还有一些变量,比如向environ这种全局变量在这里就有说明
+
+8是系统管理用的命令,这些命令只能由root使用,如ifconfig
+
+------------------------------------
+
+n新文档，可能要移到更适合的领域。
+
+o老文档，可能会在一段期限内保留。
+
+l本地文档，与本特定系统有关的。
+
+------------------------------------
+
+在shell中输入man+数字+命令/函数即可以查到相关的命令和函数。若不加数字，那Linux man命令默认从数字较小的手册中寻找相关命令和函数。
+
+例 如：我们输入man ls，它会在最左上角显示“LS（1）”，在这里，“LS”表示手册名称，而“（1）”表示该手册位于第一节章，同样，我们输入“man ifconfig”它会在最左上角显示“IFCONFIG（8）”。也可以这样输入命令：“man [章节号]手册名称”。
+
+man是按照手册的章节号的顺序进行搜索的，比如：man sleep，只会显示sleep命令的手册,如果想查看库函数sleep，就要输入：man 3 sleep
+
+------------------------------------
+
+man -f command显示man程序的所有手册
+
+例如：man -f kill
+
+man n command显示指定章节的手册
+
+man -a command显示所有章节的手册
+
+man -w command显示手册所在的路径
+
+man -aw command结合-a参数显示所有章节的手册路径
+
+------------------------------------
+```
+
+- [详细介绍Linux man命令的使用方法](https://www.cnblogs.com/Jason-Ch/articles/2772973.html)
