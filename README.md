@@ -18,6 +18,9 @@
 ### Golang
 - [Golang](golang/golang.md)
 
+### 算法
+- [Base64](algorithm/base64.md)
+
 ### Other
 - [Git](other/git.md)
 - [MacOS](other/macos.md)
