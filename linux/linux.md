@@ -178,3 +178,8 @@ man -aw command结合-a参数显示所有章节的手册路径
 ```
 
 - [详细介绍Linux man命令的使用方法](https://www.cnblogs.com/Jason-Ch/articles/2772973.html)
+
+
+### ubuntu下靠谱的PHP软件源
+
+[Ondřej Surý The main PPA for supported PHP versions with many](https://launchpad.net/~ondrej/+archive/ubuntu/php)
