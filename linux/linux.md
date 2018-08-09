@@ -183,3 +183,10 @@ man -aw command结合-a参数显示所有章节的手册路径
 ### ubuntu下靠谱的PHP软件源
 
 [Ondřej Surý The main PPA for supported PHP versions with many](https://launchpad.net/~ondrej/+archive/ubuntu/php)
+
+
+### ubuntu16.04无法使用add-apt-repository
+
+```
+apt-get install software-properties-common
+```
