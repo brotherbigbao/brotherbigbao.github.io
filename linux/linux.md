@@ -190,3 +190,8 @@ man -aw command结合-a参数显示所有章节的手册路径
 ```
 apt-get install software-properties-common
 ```
+
+### ubuntu命令行下中文问题 locale -a 看不到有中文
+```
+apt install language-pack-zh-hans
+```
