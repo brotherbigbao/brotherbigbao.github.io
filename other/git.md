@@ -17,3 +17,11 @@ git status --ignored
 git reset --hard HEAD~1
 git push --force
 ```
+
+## 撤销历史中的某个提交
+```
+#git revert 撤销 某次操作，此次操作之前和之后的commit和history都会保留，并且把这次撤销作为一次最新的提交
+#git revert是提交一个新的版本，将需要revert的版本的内容再反向修改回去，
+#版本会递增，不影响之前提交的内容
+git revert xxxxxxxx
+```
