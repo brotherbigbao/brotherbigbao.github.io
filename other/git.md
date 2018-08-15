@@ -11,3 +11,9 @@ git pull --prune
 # 查看被忽略的文件及文件夹
 git status --ignored
 ```
+
+## 意外强制回退一个提交（先确认远程分支没被他人使用）
+```
+git reset --hard HEAD~1
+git push --force
+```
