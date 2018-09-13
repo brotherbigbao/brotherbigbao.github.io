@@ -48,3 +48,18 @@ mysql> select version();
 所以当跨库插入数据的时候, 假如两个库的数据使用同一主键，虽然异常回滚并不能回滚另一个库的数据，但是不影响下一次数据的写入
 
 php mysql_connect当参数与上次一致时会重用上一个连接，pdo则不会重用连接(在php5.6.35 Yii2.0中测试是这样的)
+
+
+#### mysql常用命令
+
+1.导出, innodb格式最好使用--single-transaction, 防止锁表
+
+```sql
+mysqldump -h $host -u $username --password --databases $db_name --tables $table_name --single-transaction > ./dump.sql
+```
+
+2.导入
+
+```sql
+mysqlimport -h $host -u $username -p $db_name import.sql
+```
