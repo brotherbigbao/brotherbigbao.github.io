@@ -27,4 +27,4 @@
 - [homebrew](other/homebrew.md)
 - [Java](other/java.md)
 - [MyBatis](other/mybatis.md)
-- [正则表达式](other/regular.md)
+- [Regular](other/regular.md)

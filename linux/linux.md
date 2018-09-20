@@ -240,4 +240,13 @@ cat filename| head -n 3000 | tail -n +1000
  sed -n '5,10p' filename 这样你就可以只查看文件的第5行到第10行。
 ```
 
-[原文](https://www.cnblogs.com/xianghang123/archive/2011/08/03/2125977.html)
+> [原文](https://www.cnblogs.com/xianghang123/archive/2011/08/03/2125977.html)
+
+
+### 统计目录及子目录所有文件代码行数
+
+```
+find . -name '*.php' | xargs wc -l
+```
+
+> [原文](https://stackoverflow.com/questions/1358540/how-to-count-all-the-lines-of-code-in-a-directory-recursively?page=1&tab=votes#tab-top)
