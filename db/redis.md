@@ -1,0 +1,5 @@
+需要注意的是set在Redis版本2.6.12 提供了EX 、PX 、NX 、XX参数用于取代SETEX、SETNX和PSETEX，后续版本可能会移除SETEX、SETNX和PSETEX命令。下面是官网的原话
+
+Since the SET command options can replace SETNX, SETEX, PSETEX, it is possible that in future versions of Redis these three commands will be deprecated and finally removed.
+
+> https://redis.io/commands/set

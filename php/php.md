@@ -1,5 +1,69 @@
 # PHP
 
+#### PHP作为WEB服务重要的预定义变更 
+
+$_SERVER['REQUEST_URI'] 
+
+The URI which was given in order to access this page; for instance, '/index.html'.
+
+现在主流框架是使用这个参数匹配路由，此参数从nginx传过来，是最原始请求url, 不能被修改
+
+在Nginx中, $request_uri 这个变量等于包含一些客户端请求参数的原始URI，它无法修改，请查看$uri更改或重写URI，不包含主机名，例如：”/cnphp/test.php?arg=freemouse”
+
+```
+在nginx中以下配置
+
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+    index index.php index.html index.htm;
+}
+
+假如请求的url是: www.test.com/m/blog/342432432?from=baidu
+
+经过try_files会被转为: www.test.com/index.php?from=baidu
+
+此时的url会被下面的location匹配发送给php-fpm, 这时就明白为什么用 \.php$ 能够匹配到index.php
+
+location ~ \.php$ {
+    include fastcgi-php.conf;
+    fastcgi_pass   php-fpm:9000;
+}
+
+现在再看NGINX配置
+
+fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;
+fastcgi_param  QUERY_STRING       $query_string;
+fastcgi_param  REQUEST_METHOD     $request_method;
+fastcgi_param  CONTENT_TYPE       $content_type;
+fastcgi_param  CONTENT_LENGTH     $content_length;
+
+fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
+fastcgi_param  REQUEST_URI        $request_uri;
+fastcgi_param  DOCUMENT_URI       $document_uri;
+fastcgi_param  DOCUMENT_ROOT      $document_root;
+fastcgi_param  SERVER_PROTOCOL    $server_protocol;
+fastcgi_param  REQUEST_SCHEME     $scheme;
+fastcgi_param  HTTPS              $https if_not_empty;
+
+fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
+fastcgi_param  SERVER_SOFTWARE    nginx/$nginx_version;
+
+fastcgi_param  REMOTE_ADDR        $remote_addr;
+fastcgi_param  REMOTE_PORT        $remote_port;
+fastcgi_param  SERVER_ADDR        $server_addr;
+fastcgi_param  SERVER_PORT        $server_port;
+fastcgi_param  SERVER_NAME        $server_name;
+
+# PHP only, required if PHP was built with --enable-force-cgi-redirect
+fastcgi_param  REDIRECT_STATUS    200;
+
+$request_uri被传给PHP的$_SERVER['REQUEST_URI'], 这个值仍然是 www.test.com/m/blog/342432432?from=baidu
+
+PHP框架可以用这个原始值解析路由，$request_uri不会因为try_files等命令被更改，这个是请求原始值。
+
+老早研究过的，差点忘了，记下来
+```
+
 #### Laravel 5.6 Will Remove the Artisan Optimize Command
 With recent improvements to PHP op-code caching, the optimize Artisan command is no longer needed.
 
