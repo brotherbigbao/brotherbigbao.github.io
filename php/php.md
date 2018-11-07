@@ -18,11 +18,11 @@ location / {
     index index.php index.html index.htm;
 }
 
-假如请求的url是: www.test.com/m/blog/342432432?from=baidu
+假如请求的url是: /m/blog/342432432?from=baidu
 
-经过try_files会被转为: www.test.com/index.php?from=baidu
+经过try_files会被转为: /index.php?from=baidu
 
-此时的url会被下面的location匹配发送给php-fpm, 这时就明白为什么用 \.php$ 能够匹配到index.php
+此时的url会被下面的location匹配发送给php-fpm, 这时就明白为什么用 \.php$ 能够匹配到
 
 location ~ \.php$ {
     include fastcgi-php.conf;
@@ -57,7 +57,7 @@ fastcgi_param  SERVER_NAME        $server_name;
 # PHP only, required if PHP was built with --enable-force-cgi-redirect
 fastcgi_param  REDIRECT_STATUS    200;
 
-$request_uri被传给PHP的$_SERVER['REQUEST_URI'], 这个值仍然是 www.test.com/m/blog/342432432?from=baidu
+$request_uri被传给PHP的$_SERVER['REQUEST_URI'], 这个值仍然是 /m/blog/342432432?from=baidu
 
 PHP框架可以用这个原始值解析路由，$request_uri不会因为try_files等命令被更改，这个是请求原始值。
 
