@@ -24,3 +24,12 @@ The docker.for.mac.host.internal host prevent scratching the head regarding IP a
 
 No needs for extra configuration or environment variable in docker compose.
 ```
+
+# osx系统中/var/lib/docker的实际位置
+
+OSX系统的Docker实际是在一个虚拟机中
+```
+~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2
+```
+
+> https://stackoverflow.com/questions/38532483/where-is-var-lib-docker-on-mac-os-x
