@@ -3,6 +3,18 @@
 ```
 # 开发机上想命令行上操作mysql或redis时可以用下面命令建立一个连接
 docker exec -t -i container_name /bin/bash
+
+# 帮助 记不起来了执行此命令查看大部分帮助
+docker help
+
+# 定期查看一下volume列表
+docker volume ls
+
+# 删除没有被任务container关联的volume, 注意docker-compose down之后容器会被销毁,此时执行此命令肯定会清除掉相关的volume,慎用
+docker volume prune
+
+# 查看某个容器的volume
+docker inspect -f '{{ .Mounts }}' container_name
 ```
 
 # 开发环境中docker容器内访问宿主机ip
