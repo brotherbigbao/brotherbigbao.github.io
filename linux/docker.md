@@ -27,7 +27,7 @@ For me the followings works on Docker for Mac:
 xdebug.remote_autostart=0
 xdebug.remote_enable=1
 xdebug.default_enable=0
-xdebug.remote_host=docker.for.mac.host.internal
+xdebug.remote_host=host.docker.internal
 xdebug.remote_port=9000
 xdebug.remote_connect_back=0
 xdebug.profiler_enable=0
