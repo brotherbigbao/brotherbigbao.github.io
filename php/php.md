@@ -64,6 +64,56 @@ PHP框架可以用这个原始值解析路由，$request_uri不会因为try_file
 老早研究过的，差点忘了，记下来
 ```
 
+#### Monolog的使用
+```
+$logger = new Logger('liuyibao');
+$logger->pushHandler(new StreamHandler('/data/logs/php/liuyibao-error.log', Logger::ERROR, false));
+$logger->pushHandler(new StreamHandler('/data/logs/php/liuyibao-warning.log', Logger::WARNING, false));
+$logger->pushHandler(new StreamHandler('/data/logs/php/liuyibao-info.log', Logger::INFO, false));
+
+
+$logger->info('this is test info');
+$logger->warning('this is test warnning');
+$logger->error('this is test error');
+```
+上面的代码添加了3个处理理，执行的时候是从最后1个开始执行，即Info这个，Info 执行时会把Info及以上级别都接收且不再传给后面的处理器(第3个参数bubble=false)
+
+日志记录如下,只记录到1个文件liuyibao-info.log：
+
+```
+liuyibao-info.log
+[2018-12-10 16:37:10] liuyibao.INFO: this is test info [] []
+[2018-12-10 16:37:10] liuyibao.WARNING: this is test warnning [] []
+[2018-12-10 16:37:10] liuyibao.ERROR: this is test error [] []
+```
+
+现在我们把代码改成这样
+```
+$logger = new Logger('liuyibao');
+$logger->pushHandler(new StreamHandler('/data/logs/php/liuyibao-info.log', Logger::INFO, false));
+$logger->pushHandler(new StreamHandler('/data/logs/php/liuyibao-warning.log', Logger::WARNING, false));
+$logger->pushHandler(new StreamHandler('/data/logs/php/liuyibao-error.log', Logger::ERROR, false));
+
+$logger->info('this is test info');
+$logger->warning('this is test warnning');
+$logger->error('this is test error');
+```
+这个时候首先接收到日志的是ERROR这个handler, 它只处理ERROR及以上级别的, 且不会把已经接收的日志传给后面的处理器
+
+日志记录如下:
+```
+➜  php cat liuyibao-error.log
+[2018-12-10 16:46:59] liuyibao.ERROR: this is test error [] []
+
+➜  php cat liuyibao-warning.log
+[2018-12-10 16:46:59] liuyibao.WARNING: this is test warnning [] []
+
+➜  php cat liuyibao-info.log
+[2018-12-10 16:46:59] liuyibao.INFO: this is test info [] []
+```
+这样就可以实现按照错误日志级别分文件记录
+
+
 #### Laravel 5.6 Will Remove the Artisan Optimize Command
 With recent improvements to PHP op-code caching, the optimize Artisan command is no longer needed.
 
