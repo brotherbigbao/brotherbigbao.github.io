@@ -263,3 +263,8 @@ xargs能够处理管道或者stdin并将其转换成特定命令的命令参数�
 不过通过xargs的处理，换行和空白将被空格取代。xargs是构建单行命令的重要组件之一。
 
 [原文](http://man.linuxde.net/xargs)
+
+
+### 9 Bash Aliases to Make Your Life Easier
+
+[9 Bash Aliases to Make Your Life Easier](9-bash-aliases-to-make-your-life-easier.md)
