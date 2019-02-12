@@ -5,6 +5,22 @@
 > https://www.elastic.co/guide/en/elasticsearch/reference/2.4/date.html
 > http://php.net/manual/en/function.date.php
 
+### docker配置相关
+
+- 需要配置的volume, 这个目录保存的是索引数据:
+
+```
+/usr/share/elasticsearch/data
+```
+ 
+
+- 需要自定义配置时:
+
+```
+-v full_path_to/custom_elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+```
+
+> https://www.elastic.co/guide/en/elasticsearch/reference/6.7/docker.html
 
 ### 请求体结构化查询要点
 
