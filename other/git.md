@@ -25,3 +25,8 @@ git push --force
 #版本会递增，不影响之前提交的内容
 git revert xxxxxxxx
 ```
+
+## git add错误时，假如是首次提交，则用git reset HEAD 是没用的，要用下面命令
+```
+git reset --mixed
+```
