@@ -113,3 +113,19 @@ should :: 至少有一个查询条件匹配, 相当于 or。
   ]
 }
 ```
+
+4.bool查询的坑
+```
+#如果没有 must 语句，那么至少需要能够匹配其中的一条 should 语句。但，如果存在至少一条 must 语句，则对 should 语句的匹配没有要求（有must语句的情况下需要注意加上minimum_should_match=1）。
+#minimum_should_match添加在should语句后面
+{
+  "bool": {
+    "should": [
+      { "term": { "title": "brown" }},
+      { "term": { "title": "fox"   }},
+      { "term": { "title": "quick" }}
+    ],
+    "minimum_should_match": 2
+  }
+}
+```
