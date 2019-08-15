@@ -64,7 +64,7 @@ mysqldump -h $host -u $username --password --databases $db_name --tables $table_
 mysqlimport -h $host -u $username -p $db_name import.sql
 ```
 
-#### mysql锁
+#### mysql update锁
 
 手动加锁指的是对SELECT语句加锁，UPDATE语句始终都会自动加锁，是串行执行的，不需要考虑。
 
@@ -89,6 +89,69 @@ UPDATE table_name SET num=num+1 WHERE num=0;
 SELECT ... LOCK IN SHARE MODE;
 
 SELECT ... FOR UPDATE;
+```
+
+#### update锁示例 mysql5.6
+
+- session1
+```
+mysql> START TRANSACTION;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT * FROM plugin_lottery_item WHERE id=665;
++-----+--------+------------+--------+-------+----------+-------+-----------+--------+---------------------+---------------------+
+| id  | uid    | lottery_id | number | name  | quantity | ratio | win_count | status | updated_time        | created_time        |
++-----+--------+------------+--------+-------+----------+-------+-----------+--------+---------------------+---------------------+
+| 665 | 876309 |       1002 |      3 | ??3?? |       20 |    30 |        19 |      1 | 2019-08-15 14:46:41 | 2019-08-13 14:17:13 |
++-----+--------+------------+--------+-------+----------+-------+-----------+--------+---------------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> UPDATE `plugin_lottery_item` SET `win_count`=`win_count`+1 WHERE `id`=665 AND `win_count`<`quantity`;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+```
+
+- session2
+```
+mysql> START TRANSACTION;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT * FROM plugin_lottery_item WHERE id=665;
++-----+--------+------------+--------+-------+----------+-------+-----------+--------+---------------------+---------------------+
+| id  | uid    | lottery_id | number | name  | quantity | ratio | win_count | status | updated_time        | created_time        |
++-----+--------+------------+--------+-------+----------+-------+-----------+--------+---------------------+---------------------+
+| 665 | 876309 |       1002 |      3 | ??3?? |       20 |    30 |        19 |      1 | 2019-08-15 14:46:41 | 2019-08-13 14:17:13 |
++-----+--------+------------+--------+-------+----------+-------+-----------+--------+---------------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> UPDATE `plugin_lottery_item` SET `win_count`=`win_count`+1 WHERE `id`=665 AND `win_count`<`quantity`;
+此处卡住
+```
+
+- session1
+```
+mysql> COMMIT;
+```
+
+- session2 (session1 commit后，session2 update命令则执行，但影响行数是0，重新执行SELECT查询，显示win_count却是19，这是因为可重复读的原因，实际再次尝试update仍然不会成功)
+```
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+mysql> SELECT * FROM plugin_lottery_item WHERE id=665;
++-----+--------+------------+--------+-------+----------+-------+-----------+--------+---------------------+---------------------+
+| id  | uid    | lottery_id | number | name  | quantity | ratio | win_count | status | updated_time        | created_time        |
++-----+--------+------------+--------+-------+----------+-------+-----------+--------+---------------------+---------------------+
+| 665 | 876309 |       1002 |      3 | ??3?? |       20 |    30 |        19 |      1 | 2019-08-15 14:46:41 | 2019-08-13 14:17:13 |
++-----+--------+------------+--------+-------+----------+-------+-----------+--------+---------------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> UPDATE `plugin_lottery_item` SET `win_count`=`win_count`+1 WHERE `id`=665 AND `win_count`<`quantity`;
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+mysql> COMMIT;
+Query OK, 0 rows affected (0.00 sec)
 ```
 
 #### 共享锁(Share Lock)
