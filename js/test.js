@@ -7,4 +7,4 @@ function liuyibaoClick()
     jQuery("#Button2").click();
 }
 
-setTimeout("liuyibaoClick()", 900000);//15分钟
+setTimeout("liuyibaoClick()", 1300000);//15分钟
