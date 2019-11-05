@@ -1,0 +1,31 @@
+lua脚本
+```php
+//锁
+$luaScript = <<<EOF
+local islocked = redis.call('msetnx', KEYS[1], ARGV[1], KEYS[2], ARGV[2], KEYS[3], ARGV[3])
+if (islocked == 1)
+then
+    redis.call('expire', KEYS[1], 60)
+    redis.call('expire', KEYS[2], 60)
+    redis.call('expire', KEYS[3], 60)
+end
+return islocked
+EOF;
+$cache = \Yii::$app->redis_smart_device;
+$result = $cache->eval($luaScript,  ['seat_1', 'seat_2', 'seat_3', '1', '1', '1'], 3);
+var_dump($result);
+echo $cache->getLastError();
+
+
+
+
+
+//解锁
+$luaScript = <<<EOF
+return redis.call('del', KEYS[1], KEYS[2], KEYS[3])
+EOF;
+$cache = \Yii::$app->redis_smart_device;
+$result = $cache->eval($luaScript,  ['seat_1', 'seat_2', 'seat_3'], 3);
+var_dump($result);
+echo $cache->getLastError();
+```
