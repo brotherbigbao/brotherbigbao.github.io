@@ -290,3 +290,9 @@ ssh -D localhost:2000 root@103.59.22.17
 ```
 
 > [好文：玩转SSH端口转发](https://blog.fundebug.com/2017/04/24/ssh-port-forwarding/)
+
+
+### mac下查看文件大小并按大小排序， linux下类似
+```
+du -h -d 1 | sort -h
+```
