@@ -4,6 +4,8 @@
 
 - [Mac安装多版本Java](https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a)
 
+- [Installing java11 on macos with homebrew](https://medium.com/w-logs/installing-java-11-on-macos-with-homebrew-7f73c1e9fadf)
+
 
 # 安装多版本Java过程
 
