@@ -1,3 +1,16 @@
 # Java
 
 - [避免Java应用中NullPointerException的技巧和最佳实践](http://www.importnew.com/7268.html)
+
+- [Mac安装多版本Java](https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a)
+
+
+# 安装多版本Java过程
+
+```
+brew install jenv
+
+brew tap homebrew/cask-versions
+
+brew info java11
+```
