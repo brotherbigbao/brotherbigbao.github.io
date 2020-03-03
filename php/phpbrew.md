@@ -1,0 +1,38 @@
+### 安装 ext-intl 扩展
+
+```
+phpbrew ext install intl
+
+# 报这个错误
+checking for location of ICU headers and libraries... not found
+configure: error: Unable to detect ICU prefix or no failed. Please verify ICU install prefix and make sure icu-config works.
+
+# 尝试这样可以解决, 首先检查自己是否安装了icu4c
+brew install icu4c
+或
+brew info icu4c
+
+# 确实已经装了
+brew link icu4c
+Warning: Refusing to link macOS-provided software: icu4c
+
+# 网上搜了搜
+brew link icu4c --force
+Warning: Refusing to link macOS-provided software: icu4c
+
+# 看下icu4c目录
+cd /usr/local/Cellar/icu4c/61.1/bin
+ls
+
+# 发现有个icu-config可执行文件
+derb       genbrk     gencfu     gencnval   gendict    genrb      icu-config icuinfo    makeconv   pkgdata    uconv
+
+# 尝试自己手动创建软链接
+cd /usr/local/bin
+ln -s /usr/local/Cellar/icu4c/61.1/bin/icu-config
+
+# 再次尝试安装
+phpbrew ext install intl
+
+居然成功了！Success.
+```
