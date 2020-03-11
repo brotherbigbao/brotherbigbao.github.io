@@ -100,3 +100,7 @@ unhide = update-index --no-assume-unchanged
 
 ignored = !git ls-files -v | grep "^h"
 ```
+
+## 拉代码时强制 git pull --rebase
+
+git config branch.branch-name.rebase true
