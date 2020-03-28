@@ -255,3 +255,14 @@ empty: 判断一个变量是否为空(null、false、00、0、’0′、』这�
 
 isset: 判断一个变量是否设置(值为false、00、0、’0′、』这类，也会返回true)。
 ```
+
+#### array_multisort 的理解
+
+- [array_multisort()函数超详细理解](https://www.cnblogs.com/lxwphp/p/9395973.html)
+
+```
+array_multisort()这个函数可以对多个PHP数组进行排序，排序结果是所有的数组都按第一个数组的顺序进行排列。
+例如array_multisort($a,$b)，$a,$b是两个数组，如果排序之后，$a数组的第3个元素被排到了第一位，那么$b的第三个元素不管他在$b中的大小都会排在第一位。
+不过需要注意的是：两个数组的元素个数必须相同。
+如果有多个数组，且都设置了排序方式，假如第一个数组有相同的元素，则使用后面的数组排序，这个类似于sql查询的order by: select * from table_name order by id desc, age asc
+```
