@@ -286,3 +286,8 @@ array_multisort()这个函数可以对多个PHP数组进行排序，排序结果
 不过需要注意的是：两个数组的元素个数必须相同。
 如果有多个数组，且都设置了排序方式，假如第一个数组有相同的元素，则使用后面的数组排序，这个类似于sql查询的order by: select * from table_name order by id desc, age asc
 ```
+
+#### 你必须知道的 17 个 Composer 最佳实践（已更新至 22 个）
+
+- [https://learnku.com/php/t/7609/you-have-to-know-17-composer-best-practices-updated-to-22](https://learnku.com/php/t/7609/you-have-to-know-17-composer-best-practices-updated-to-22)
+- [https://blog.martinhujer.cz/17-tips-for-using-composer-efficiently/](https://blog.martinhujer.cz/17-tips-for-using-composer-efficiently/)
