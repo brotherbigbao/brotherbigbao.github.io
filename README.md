@@ -16,7 +16,7 @@
 - [Lua](linux/lua.md)
 
 ### Golang
-- [Golang](golang/golang.md)
+- [Gopl](golang/gopl.md)
 
 ### 算法
 - [Base64](algorithm/base64.md)
