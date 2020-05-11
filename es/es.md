@@ -22,6 +22,12 @@
 
 > https://www.elastic.co/guide/en/elasticsearch/reference/6.7/docker.html
 
+### 父子查询和嵌套查询的使用
+
+- 实际使用嵌套查询的效率要高得多，使用父子查询要慢一些，尤其随着数据量递增，父子查询会越来越慢。
+但假如你的业务用到了wildcard等无法很好使用到索引的查询，会导致嵌套查询效率超慢有当机的风险，这种情况下改用父子查询更好或者使用ngram代替正则查询。
+[www.elastic.co](https://www.elastic.co/guide/cn/elasticsearch/guide/current/ngrams-compound-words.html#ngrams-compound-words)
+
 ### Elasticsearch实战 笔记
 
 1.你无法改变现有字段的数据类型，而且通常无法改变一个字段被索引的方式. 正确的做法是移出所有数据，设置新的映射类型，再次索引所有的数据
