@@ -9,11 +9,11 @@
 ### DB
 - [MySQL](db/mysql.md)
 
-### Linux
-- [Linux](linux/linux.md)
+### 基础设施
+- [Elasticsearch](es/es.md)
 - [Nginx](nginx/nginx.md)
 - [Docker](linux/docker.md)
-- [Lua](linux/lua.md)
+- [Linux](linux/linux.md)
 
 ### Golang
 - [Gopl](golang/gopl.md)
@@ -29,6 +29,7 @@
 - [MyBatis](other/mybatis.md)
 - [Regular](other/regular.md)
 - [Web安全](security/web.md)
+- [Lua](linux/lua.md)
 
 ### online resource
 
