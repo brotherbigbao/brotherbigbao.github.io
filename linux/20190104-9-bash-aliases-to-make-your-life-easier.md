@@ -1,8 +1,11 @@
+# 9 bash aliases to make your life easier
+> bash alias 使用技巧
+
 Allow me to share with you some intuitive Bash alias definitions for the command line interface in my first Medium post.
 
 Bash aliases, together with tab completion on the command line interface, make you more efficient and productive at work because essentially you type less, and you are less prone to erroneous command inputs.
 
-#### 1.cdd
+## 1.cdd
 
 Similar tocd, this changes directory and also lists its contents.
 
@@ -17,7 +20,7 @@ function cdd() {
 }
 ```
 
-#### 2.I don’t Git it
+## 2.I don’t Git it
 
 Git pushing and pulling is such a pain. Let’s summarise all those lines of commands in a line.
 
@@ -44,7 +47,7 @@ function gitrefresh() {
 }
 ```
 
-#### 3.Accessing your remote servers
+## 3.Accessing your remote servers
 Removed Bash alias ‘sshtoserver’ because you can do it in a more elegant way.
 
 Usage:
@@ -60,7 +63,7 @@ function scptoserver() {
 }
 ```
 
-#### 4.Googling
+## 4.Googling
 You’re on the command line or in an editor with CLI but need to google something. I would assume you have Google Chrome. Otherwise, you can rename to a different browser.
 
 Usage:
@@ -79,7 +82,7 @@ function googlestack() {
 }
 ```
 
-#### 5.Conda
+## 5.Conda
 Conda is an environment and package manager which I use frequently for my Python projects. The following shortcut reminds you the current environment you are in.
 
 Usage:
@@ -93,7 +96,7 @@ function currentenv() {
 }
 ```
 
-#### 6.Spotify
+## 6.Spotify
 Developers listen to music while coding right? This one makes use Spotify API and lynx. Follow the instructions to get the Spotify API here (it’s really easy), and brew install lynx.
 
 Usage:
@@ -115,7 +118,7 @@ function lyrics2() {
 }
 ```
 
-#### 7.Compiling C
+## 7.Compiling C
 I don’t really program in C but this compiles and runs your C program.
 
 Usage:
@@ -130,7 +133,7 @@ function compilec() {
 }
 ```
 
-#### 8.Desktop
+## 8.Desktop
 I can’t help but to have a shortcut to go to the desktop.
 
 Usage:
@@ -144,7 +147,7 @@ function desktop() {
 }
 ```
 
-#### 9.Shortcuts
+## 9.Shortcuts
 Wait, what was the shortcut you wrote yesterday again? This prints out the list of aliases you have defined.
 
 Usage:
