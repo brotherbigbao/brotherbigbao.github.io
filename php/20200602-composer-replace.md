@@ -1,6 +1,6 @@
 # 理解 composer.json 的 replace
-
 理解 composer.json 的 replace
+
 通常你在 composer.json 裡很少會用到 replace 這個 schema 屬性 ，不過在以下情境它就很有用了。
 
 例如你正在開發一個專案 (也就是在 composer.json 中的 type 為 project ) ，它相依 original/library 這個套件以及 other/package 這個套件。很巧的是， other/package 這個套件也相依了 original/library 這個套件。
