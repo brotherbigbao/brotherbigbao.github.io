@@ -1,7 +1,7 @@
 # location 匹配规则
 >转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
 
-#### 语法规则
+## 语法规则
 
 > location [=|~|~*|^~] /uri/ { … }
 
@@ -97,7 +97,7 @@ location / {
 }
 ```
 
-#### rewrite 语法
+## rewrite 语法
 
 * last          – 基本上都用这个 flag
 * break         – 中止 rewrite，不再继续匹配
@@ -121,7 +121,7 @@ location / {
     $document_root：D:\nginx/html
     $request_filename：D:\nginx/html/test1/test2/test.php
 
-#### redirect 语法
+## redirect 语法
 
 ```nginx
 server {
@@ -135,7 +135,7 @@ server {
 }
 ```
 
-#### 防盗链
+## 防盗链
 
 ```nginx
 location ~* \.(gif|jpg|swf)$ {
@@ -146,7 +146,7 @@ location ~* \.(gif|jpg|swf)$ {
 }
 ```
 
-#### 根据文件类型设置过期时间
+## 根据文件类型设置过期时间
 
 ```nginx
 location ~* \.(js|css|jpg|jpeg|gif|png|swf)$ {
@@ -157,7 +157,7 @@ location ~* \.(js|css|jpg|jpeg|gif|png|swf)$ {
 }
 ```
 
-#### 禁止访问某个目录
+## 禁止访问某个目录
 
 ```nginx
 location ~* \.(txt|doc)${

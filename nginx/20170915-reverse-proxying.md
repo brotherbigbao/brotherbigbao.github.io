@@ -1,5 +1,4 @@
 # Nginx reverse proxying
-
 > 转自: 《Mastering NGINX》Second Edition
 
 Introducing reverse proxying
