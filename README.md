@@ -1,3 +1,7 @@
+[JetBrains代码搜索技巧](other/20200603-jetbrains-usage.md) created_at：2020-06-03
+>使用正则匹配快速定位代码
+
+
 [理解 composer.json 的 replace](php/20200602-composer-replace.md) created_at：2020-06-02
 >理解 composer.json 的 replace
 
@@ -94,6 +98,10 @@
 >转自: 《Mastering NGINX》Second Edition
 
 
+[location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
+>转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
+
+
 [homebrew 操作指南](other/20170824-homebrew.md) created_at：2017-08-24
 >subtitle not define
 
@@ -103,6 +111,22 @@
 
 
 [xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+>subtitle not define
+
+
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+>subtitle not define
+
+
+[Git使用记录](other/20170609-git.md) created_at：2017-06-09
+>Git使用记录
+
+
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+>subtitle not define
+
+
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
 >subtitle not define
 
 

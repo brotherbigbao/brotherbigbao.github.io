@@ -23,7 +23,7 @@ foreach ($subDirList as $subDir) {
                 && !in_array(substr($file, 0, 1), ['.', '~'])
                 && substr($file, -3) == '.md'
             ) {
-                $mdFiles[substr($file, 0, 8)] = $subDir . '/' . $file;
+                $mdFiles[substr($file, 0, 8) . mt_rand(10000000, 99999999)] = $subDir . '/' . $file;
             }
         }
     }
@@ -42,7 +42,7 @@ foreach ($mdFiles as $createDate => $mdFile) {
         'title' => $title !== false ? trim(trim($title, '#')) : '标题未定义',
         'subTitle' => $subTitle !== false ? trim(trim($subTitle, '>')) : '副标题未定义',
         'path' => str_replace($rootDir . '/', '', $mdFile),
-        'createDate' => $createDate,
+        'createDate' => substr($createDate, 0, 8),
     ];
 }
 //print_r($readmeLists);
