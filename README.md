@@ -1,3 +1,7 @@
+[composer require-dev](php/20200604-composer-require-dev.md) created_at：2020-06-04
+>require-dev包中指定的依赖只有在根项目中才会安装
+
+
 [JetBrains代码搜索技巧](other/20200603-jetbrains-usage.md) created_at：2020-06-03
 >使用正则匹配快速定位代码
 
@@ -114,15 +118,15 @@
 >subtitle not define
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
->subtitle not define
-
-
 [Git使用记录](other/20170609-git.md) created_at：2017-06-09
 >Git使用记录
 
 
 [mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+>subtitle not define
+
+
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
