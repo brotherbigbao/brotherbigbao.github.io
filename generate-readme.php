@@ -56,7 +56,7 @@ foreach ($readmeLists as $item) {
 // LINK.md
 $linkContent = file_get_contents('LINK.md');
 
-file_put_contents('README.md', "##Blog\n" . $readMeContent . "##Recommend Link\n" . $linkContent);
+file_put_contents('README.md', "## Blog\n" . $readMeContent . "## Recommend Link\n" . $linkContent);
 
 // function define
 

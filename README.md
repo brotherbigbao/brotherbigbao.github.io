@@ -1,4 +1,4 @@
-##Blog
+## Blog
 [composer require-dev](php/20200604-composer-require-dev.md) created_at：2020-06-04
 >require-dev包中指定的依赖只有在根项目中才会安装
 
@@ -115,15 +115,11 @@
 >mysql使用记录
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
->subtitle not define
-
-
 [Git使用记录](other/20170609-git.md) created_at：2017-06-09
 >Git使用记录
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -135,7 +131,11 @@
 >subtitle not define
 
 
-##Recommend Link
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+>subtitle not define
+
+
+## Recommend Link
 - [Free Programming Books – GoalKicker.com](https://goalkicker.com/)
 - [https://blog.blackfire.io/](https://blog.blackfire.io/)
 - [官方中国行政区划代码](http://www.mca.gov.cn/article/sj/xzqh/)
