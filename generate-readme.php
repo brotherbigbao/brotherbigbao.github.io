@@ -52,7 +52,11 @@ $readMeContent = '';
 foreach ($readmeLists as $item) {
     $readMeContent .= sprintf("[%s](%s) created_at：%s\n>%s\n\n\n", $item['title'], $item['path'], getPrettyDate($item['createDate']), ($item['subTitle'] ?: 'subtitle not define'));
 }
-file_put_contents('README.md', $readMeContent);
+
+// LINK.md
+$linkContent = file_get_contents('LINK.md');
+
+file_put_contents('README.md', "##Blog\n" . $readMeContent . "##Recommend Link\n" . $linkContent);
 
 // function define
 
