@@ -1,3 +1,5 @@
+![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
+
 ## Blog
 [利用 SPL 快速实现 Observer 设计模式](php/20200612-observerspl.md) created_at：2020-06-12
 >胡 屹 2012 年 1 月 16 日发布
@@ -103,12 +105,12 @@
 >subtitle not define
 
 
-[location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
->转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
-
-
 [Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
 >转自: 《Mastering NGINX》Second Edition
+
+
+[location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
+>转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
 
 
 [homebrew 操作指南](other/20170824-homebrew.md) created_at：2017-08-24
@@ -123,7 +125,11 @@
 >Git使用记录
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+>subtitle not define
+
+
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -131,11 +137,7 @@
 >subtitle not define
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
->subtitle not define
-
-
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 

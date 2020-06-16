@@ -47,6 +47,8 @@ foreach ($mdFiles as $createDate => $mdFile) {
 }
 //print_r($readmeLists);
 
+$statContent = '![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)';
+
 // 生成README.md
 $readMeContent = '';
 foreach ($readmeLists as $item) {
@@ -56,7 +58,7 @@ foreach ($readmeLists as $item) {
 // LINK.md
 $linkContent = file_get_contents('LINK.md');
 
-file_put_contents('README.md', "## Blog\n" . $readMeContent . "## Recommend Link\n" . $linkContent);
+file_put_contents('README.md', $statContent . "\n\n## Blog\n" . $readMeContent . "## Recommend Link\n" . $linkContent);
 
 // function define
 
