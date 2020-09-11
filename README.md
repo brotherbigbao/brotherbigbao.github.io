@@ -109,12 +109,12 @@
 >subtitle not define
 
 
-[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
->转自: 《Mastering NGINX》Second Edition
-
-
 [location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
 >转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
+
+
+[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
+>转自: 《Mastering NGINX》Second Edition
 
 
 [homebrew 操作指南](other/20170824-homebrew.md) created_at：2017-08-24
@@ -125,7 +125,7 @@
 >mysql使用记录
 
 
-[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -141,7 +141,7 @@
 >Git使用记录
 
 
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
 >subtitle not define
 
 
