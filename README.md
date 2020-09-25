@@ -1,6 +1,10 @@
 ![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
 
 ## Blog
+[DBGp Proxy 是什么东东](php/20200925-xdebug.md) created_at：2020-09-25
+>一般情况下不需要配置这个东西
+
+
 [Linux PHP&MySQL软件源](php/20200913-php-packages-linux.md) created_at：2020-09-13
 >方便服务器部署
 
@@ -133,7 +137,11 @@
 >mysql使用记录
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+>subtitle not define
+
+
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -141,15 +149,11 @@
 >subtitle not define
 
 
-[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
->subtitle not define
-
-
 [Git使用记录](other/20170609-git.md) created_at：2017-06-09
 >Git使用记录
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
 
