@@ -1,6 +1,10 @@
 ![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
 
 ## Blog
+[Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.61.dylib](php/20201105-mac-icu4c.md) created_at：2020-11-05
+>最新的homebrew只安装了最新版本，brew switch xxx version  已经无法切换了
+
+
 [Linux Netcat 命令——网络工具中的瑞士军刀](linux/20201104-nc.md) created_at：2020-11-04
 >nc命令的使用，转自 https://www.oschina.net/translate/linux-netcat-command
 
@@ -153,10 +157,6 @@
 >subtitle not define
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
->subtitle not define
-
-
 [Git使用记录](other/20170609-git.md) created_at：2017-06-09
 >Git使用记录
 
@@ -166,6 +166,10 @@
 
 
 [laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+>subtitle not define
+
+
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
