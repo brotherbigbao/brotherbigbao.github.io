@@ -4,8 +4,6 @@
 ## 基础
 
 1. go modules 默认依赖存放在$GOPATH/pkg/mod下
-2. go mod vendor 命令可以将依赖copy到项目vendor目录下
-3. go build -mod=vendor 编译时加上-mod=vendor会使用vendor，默认是不会使用vendor
 
 
 ## 常用命令
@@ -19,6 +17,9 @@ go mod init example.com/hello
 
 #会创建vendor目录将依赖copy进去
 go mod vendor 
+
+#编译时加上-mod=vendor会使用vendor，默认是不会使用vendor
+go build -mod=vendor
 ```
 
 ## 相关链接
