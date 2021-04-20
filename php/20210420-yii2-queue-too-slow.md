@@ -27,11 +27,9 @@ stdout_logfile_backups=50
 
 ## 配置 --isolate 碰到的问题
 
-配置 --isolate 就不会再fork子进程，一直在父进程中处理，但是假如数据库断开这种问题发生，目前yii无法重连，需要优化一下，详见这篇 [yii-mysql-connect](20210420-yii-mysql-connect.md)
+配置 --isolate 就不会再fork子进程，一直在父进程中处理，但是假如数据库断开这种问题发生，目前yii无法重连，需要优化一下
 
-也可以写一个脚本监控运行状态，看下面
-
-## 监控 yii2-queue 队列 阀值仅供参考
+## 解决方案1 也可以写一个脚本监控 yii2-queue 队列状态, reserved过大的原因是失败队列导致的， 阀值仅供参考
 
 执行 
 ```
@@ -52,3 +50,9 @@ Jobs
 waiting > 3000，报堵塞
 reserved > 100，报失败队列过多，重启进程  supervisorctl restart queue-test:*
 ```
+
+## 解决方案2 捕获数据库连接异常
+
+数据库重连 详见这篇 [yii-mysql-connect](20210420-yii-mysql-connect.md)
+
+可以尝试在捕获取相应异常信息时，直接exit进程
