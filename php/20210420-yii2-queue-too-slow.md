@@ -56,3 +56,7 @@ reserved > 100，报失败队列过多，重启进程  supervisorctl restart que
 数据库重连 详见这篇 [yii-mysql-connect](20210420-yii-mysql-connect.md)
 
 可以尝试在捕获取相应异常信息时，直接exit进程
+
+## yii2-queue使用的redis作为驱动， redis挂掉队列进程会挂掉么？
+
+测试了，redis出问题的话进程会挂掉，db出问题不会挂掉，这是因为在队列消费之前就连接redis了，会遵守command命令的异常机制，但是在队列消费逻辑内为了使重试机制生效，所有的异常都会被捕获掉
