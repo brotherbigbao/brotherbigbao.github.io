@@ -1,6 +1,14 @@
 ![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
 
 ## Blog
+[谈谈PHP-FPM的Reload操作](php/20210903-reload.md) created_at：2021-09-03
+>php-fpm reload
+
+
+[phpbrew安装扩展时报openssl找不到](php/20210826-openssl.md) created_at：2021-08-26
+>configure: error: Cannot find OpenSSL's <evp.h>
+
+
 [谈谈 PHP-FPM 模式下的 MySQL 持久连接](php/20210712-fpm-mysql.md) created_at：2021-07-12
 >一个 worker 只能维持一个长连接,无法和别的 worker 共享, 只能通过配置 pm.max_children 来让 FPM 维持的长连接没有那么多不要超过 MySQL 的最大连接数.
 
@@ -9,12 +17,12 @@
 >php-fpm并不是每次请求就销毁
 
 
-[yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
->yii2中mysql并没有重连机制 需要手动修改
-
-
 [yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
 >原因是yii2-queue 取到一条消息后，会fork子进程
+
+
+[yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
+>yii2中mysql并没有重连机制 需要手动修改
 
 
 [grep 的使用](linux/20210414-grep.md) created_at：2021-04-14
@@ -177,12 +185,12 @@
 >subtitle not define
 
 
-[location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
->转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
-
-
 [Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
 >转自: 《Mastering NGINX》Second Edition
+
+
+[location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
+>转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
 
 
 [homebrew 操作指南](other/20170824-homebrew.md) created_at：2017-08-24
@@ -193,7 +201,7 @@
 >mysql使用记录
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -201,15 +209,15 @@
 >Git使用记录
 
 
-[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
->subtitle not define
-
-
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
->subtitle not define
-
-
 [composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+>subtitle not define
+
+
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+>subtitle not define
+
+
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
 >subtitle not define
 
 
