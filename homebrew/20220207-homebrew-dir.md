@@ -22,6 +22,9 @@ ln -s ../Cellar/icu4c/61.1 icu4c
 保存实际的ruby脚本，是这个仓库的代码 https://github.com/Homebrew/homebrew-core
 可以使用命令 cd $(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core/Formula 切换到这个目录
 
+/usr/local/Homebrew/Library/Taps/
+第三方tap库
+
 /usr/local/opt: 安装依赖时会在这个目录下创建软链到Cellar
 ```
 
