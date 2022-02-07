@@ -8,6 +8,9 @@ cd Downloads/icu/source
 ./configure --prefix=/usr/local/Cellar/icu4c/61.1 --disable-samples --disable-tests --enable-static --with-library-bits=64
 make
 make install
+cd /usr/local/opt
+mv icu4c icu4c.61.1
+ln -s ../Cellar/icu4c/61.1 icu4c
 ```
 
 ## homebrew目录
