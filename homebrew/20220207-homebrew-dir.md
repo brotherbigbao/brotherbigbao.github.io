@@ -14,6 +14,10 @@ make install
 
 ```
 /usr/local/Homebrew: 是这个仓库的代码 https://github.com/Homebrew/brew
-/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula: 是这个仓库的代码 https://github.com/Homebrew/homebrew-core
+
+/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula
+保存实际的ruby脚本，是这个仓库的代码 https://github.com/Homebrew/homebrew-core
+可以使用命令 cd $(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core/Formula 切换到这个目录
+
 /usr/local/opt: 安装依赖时会在这个目录下创建软链到Cellar
 ```
