@@ -24,3 +24,7 @@ ln -s ../Cellar/icu4c/61.1 icu4c
 
 /usr/local/opt: 安装依赖时会在这个目录下创建软链到Cellar
 ```
+
+brew style --fix icu4c.rb
+
+https://stackoverflow.com/questions/70335759/brew-install-specific-version-of-a-package-fails
