@@ -53,7 +53,7 @@
 >go get vpn失败也可以手动从 github clone
 
 
-[Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.61.dylib](php/20201105-mac-icu4c.md) created_at：2020-11-05
+[Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.61.dylib](homebrew/20201105-mac-icu4c.md) created_at：2020-11-05
 >最新的homebrew只安装了最新版本，brew switch xxx version  已经无法切换了
 
 
@@ -81,7 +81,7 @@
 >为什么不使用ORM的关联或with查询
 
 
-[Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.61.dylib](php/20200910-icu4c.md) created_at：2020-09-10
+[Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.61.dylib](homebrew/20200910-icu4c.md) created_at：2020-09-10
 >php7和node icu4c冲突
 
 
@@ -113,7 +113,7 @@
 >subtitle not define
 
 
-[phpbrew使用](php/20200303-phpbrew.md) created_at：2020-03-03
+[phpbrew使用](homebrew/20200303-phpbrew.md) created_at：2020-03-03
 >subtitle not define
 
 
@@ -197,7 +197,7 @@
 >转自: 《Mastering NGINX》Second Edition
 
 
-[homebrew 操作指南](other/20170824-homebrew.md) created_at：2017-08-24
+[homebrew 操作指南](homebrew/20170824-homebrew.md) created_at：2017-08-24
 >subtitle not define
 
 
