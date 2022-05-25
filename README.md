@@ -25,12 +25,12 @@
 >php-fpm并不是每次请求就销毁
 
 
-[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
->原因是yii2-queue 取到一条消息后，会fork子进程
-
-
 [yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
 >yii2中mysql并没有重连机制 需要手动修改
+
+
+[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
+>原因是yii2-queue 取到一条消息后，会fork子进程
 
 
 [grep 的使用](linux/20210414-grep.md) created_at：2021-04-14
@@ -193,12 +193,12 @@
 >subtitle not define
 
 
-[location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
->转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
-
-
 [Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
 >转自: 《Mastering NGINX》Second Edition
+
+
+[location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
+>转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
 
 
 [homebrew 操作指南](homebrew/20170824-homebrew.md) created_at：2017-08-24
@@ -209,6 +209,14 @@
 >mysql使用记录
 
 
+[Git使用记录](other/20170609-git.md) created_at：2017-06-09
+>Git使用记录
+
+
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+>subtitle not define
+
+
 [xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
@@ -217,16 +225,8 @@
 >subtitle not define
 
 
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
->subtitle not define
-
-
 [composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
-
-
-[Git使用记录](other/20170609-git.md) created_at：2017-06-09
->Git使用记录
 
 
 ## Recommend Link
