@@ -22,6 +22,18 @@
 
 **Provider()** 目前的理解是手动定义提供依赖（Init方法一般指定需要的插件结构体，假如你要手动返回其它组件，需要用Provider方法），目前只在log插件中定义，返回zap logger组件。
 
+## roadrunner 最小化配置
+
+```
+server:
+  command: "php psr-worker.php"
+
+http:
+  address: 0.0.0.0:8088
+  pool:
+    num_workers: 4
+```
+
 ## 核心插件 server, 实际的进程管理器
 
 server是实际的php worker进程管理器，http插件接收到请求会交由server插件处理
