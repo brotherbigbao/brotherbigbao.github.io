@@ -21,3 +21,80 @@
 **Collector()** 目的也是手动指定依赖，在http插件中有这个方法，用于注入http拦截器。
 
 **Provider()** 目前的理解是手动定义提供依赖（Init方法一般指定需要的插件结构体，假如你要手动返回其它组件，需要用Provider方法），目前只在log插件中定义，返回zap logger组件。
+
+## 核心插件 server, 实际的进程管理器
+
+server是实际的php worker进程管理器，http插件接收到请求会交由server插件处理
+
+## 核心插件 http
+
+http 插件 Init 方法需要的依赖如下，其中 server.Server 就是进程管理器：
+
+```
+func (p *Plugin) Init(cfg cfgPlugin.Configurer, rrLogger *zap.Logger, srv server.Server) error
+```
+
+Server() 方法是启动逻辑，调用了内部方法 serve()：
+
+```
+// Serve serves the svc.
+func (p *Plugin) Serve() chan error {
+	errCh := make(chan error, 2)
+	// run whole process in the goroutine, needed for the PHP
+	go func() {
+		// protect http initialization
+		p.mu.Lock()
+		p.serve(errCh)
+		p.mu.Unlock()
+	}()
+
+	return errCh
+}
+```
+
+server() 方法关键代码，其中 p.server 就是依赖插件 server， 生成的 p.pool 用于最终的 p.handler生成：
+
+```
+var err error
+p.pool, err = p.server.NewWorkerPool(context.Background(), p.cfg.Pool, map[string]string{RrMode: "http"}, p.log)
+if err != nil {
+    errCh <- err
+    return
+}
+
+// just to be safe :)
+if p.pool == nil {
+    errCh <- errors.Str("pool should be initialized")
+    return
+}
+
+p.handler, err = handler.NewHandler(
+    p.cfg.HTTPConfig,
+    p.cfg.Uploads,
+    p.pool,
+    p.log,
+)
+```
+
+最终的 http 服务启动， 实际执行的是 ServeHTTP() 方法，可以详细看下原生 http 服务的 Handle定义，关键代码如下：
+
+```
+func (p *Plugin) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+    ...
+    p.handler.ServeHTTP(w, r)
+    ...
+}
+```
+
+最终 handler 的 ServeHTTP 方法，在这个方法中构造了Payload并丢给进程管理执行：
+
+```
+// ServeHTTP transform original request to the PSR-7 passed then to the underlying application. Attempts to serve static files first if enabled.
+func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+    pld := h.getPld()
+    ...
+    err = req.Payload(pld)
+    ...
+    wResp, err := h.pool.Exec(pld)
+}
+```
