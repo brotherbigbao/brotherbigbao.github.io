@@ -98,3 +98,5 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
     wResp, err := h.pool.Exec(pld)
 }
 ```
+
+实际可以把 http 的 Plugin 结构当成一个包装器，实际 http 请求处理是在 handler 这个内部结构体中定义的。
