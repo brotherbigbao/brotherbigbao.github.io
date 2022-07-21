@@ -5,6 +5,15 @@
 ## sdk中定义的可能抛出哪些异常
 
 ```
+if (array_search($response['status'], $ignore) !== false) {
+    return;
+}
+
+// if responseBody is not string, we convert it so it can be used as Exception message
+if (!is_string($responseBody)) {
+    $responseBody = json_encode($responseBody);
+}
+
 if ($statusCode === 400 && strpos($responseBody, "AlreadyExpiredException") !== false) {
     $exception = new AlreadyExpiredException($responseBody, $statusCode);
 } elseif ($statusCode === 403) {
