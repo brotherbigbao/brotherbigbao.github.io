@@ -46,7 +46,7 @@ http 插件 Init 方法需要的依赖如下，其中 server.Server 就是进程
 func (p *Plugin) Init(cfg cfgPlugin.Configurer, rrLogger *zap.Logger, srv server.Server) error
 ```
 
-Server() 方法是启动逻辑，调用了内部方法 serve()：
+Serve() 方法是启动逻辑，调用了内部方法 serve()：
 
 ```
 // Serve serves the svc.
@@ -64,7 +64,9 @@ func (p *Plugin) Serve() chan error {
 }
 ```
 
-server() 方法关键代码，其中 p.server 就是依赖插件 server， 生成的 p.pool 用于最终的 p.handler生成：
+server() 方法关键代码，其中 p.server 就是依赖插件 server， 生成的 p.pool 用于最终的 p.handler生成
+
+p.handler 是最终的 http 处理 handler，其实现了 ServeHTTP 方法，它又被 http.Plugin{} 的 ServeHTTP 方法调用，执行时被调用的是 http.Plugin{} 的 ServeHTTP 方法，要把 http.Plugin{} 看成是1个包装结构体 ：
 
 ```
 var err error
