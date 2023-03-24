@@ -45,3 +45,11 @@ sudo systemctl disable apache2.service
 
 -Drecreate.x11.input.method=true
 ```
+
+# idea 键盘插件
+
+macOS For All
+
+> https://plugins.jetbrains.com/plugin/13968-macos-for-all
+
+> https://github.com/samvtran/jetbrains-macos-keybindings-for-all
