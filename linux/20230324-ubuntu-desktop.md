@@ -53,3 +53,13 @@ macOS For All
 > https://plugins.jetbrains.com/plugin/13968-macos-for-all
 
 > https://github.com/samvtran/jetbrains-macos-keybindings-for-all
+
+# gitlab 使用sha1报错
+
+sign_and_send_pubkey: no mutual signature supported
+
+新建 ~/.ssh/config 文件，插入如下内容:
+
+```
+PubkeyAcceptedKeyTypes +ssh-rsa
+```
