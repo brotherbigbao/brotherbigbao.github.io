@@ -63,3 +63,13 @@ sign_and_send_pubkey: no mutual signature supported
 ```
 PubkeyAcceptedKeyTypes +ssh-rsa
 ```
+
+# 开启SSH Server
+
+```
+sudo apt install openssh-server
+sudo systemctl status ssh
+
+如果没有启用则: sudo systemctl enable --now ssh
+
+```
