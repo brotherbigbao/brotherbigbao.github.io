@@ -46,7 +46,7 @@ sudo systemctl disable apache2.service
 -Drecreate.x11.input.method=true
 ```
 
-# idea 键盘插件
+# idea 键盘插件 使用Ctrl键替换command键 (idea 官方插件是meta键 需要配合 gnome-tweaks，使用起来还有问题)
 
 macOS For All
 
@@ -73,3 +73,21 @@ sudo systemctl status ssh
 如果没有启用则: sudo systemctl enable --now ssh
 
 ```
+
+# gnome-tweaks 更改键盘映射
+
+在ubuntu应用商店就可以搜索安装
+
+或者在命令行安装: sudo apt install gnome-tweaks
+
+```
+or Ubuntu 20.04, you should relace the command (aka. Windows/ Win) key with the meta key.
+
+Run sudo apt install gnome-tweaks
+Run gnome-tweaks
+Click Keyboard & Mouse > Additional Layout Options > Expand Alt/Win key behaviour > Select "Meta is mapped to Win" (2nd last in list)
+```
+
+> https://askubuntu.com/questions/604496/using-mac-os-shortcuts-in-intellij-idea-with-ubuntu
+
+> https://www.cnblogs.com/liuzhch1/p/16047019.html
