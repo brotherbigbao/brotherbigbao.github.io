@@ -1,6 +1,10 @@
 ![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
 
 ## Blog
+[ubuntu desktop 作为开发机 尝试使用ibus-rime输入法](linux/20230512-ubuntu-rime输入法尝试.md) created_at：2023-05-12
+>ibus-rime 输入法
+
+
 [ubuntu desktop 作为开发机 五笔输入法乱码问题解决](linux/20230510-ubuntu-五笔输入乱码修复.md) created_at：2023-05-10
 >输入法候选有乱码问题
 
@@ -221,12 +225,12 @@
 >subtitle not define
 
 
-[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
->转自: 《Mastering NGINX》Second Edition
-
-
 [location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
 >转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
+
+
+[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
+>转自: 《Mastering NGINX》Second Edition
 
 
 [homebrew 操作指南](homebrew/20170824-homebrew.md) created_at：2017-08-24
@@ -237,7 +241,7 @@
 >mysql使用记录
 
 
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -245,11 +249,11 @@
 >Git使用记录
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
 >subtitle not define
 
 
