@@ -1,7 +1,7 @@
 # ubuntu desktop 作为开发机 尝试使用ibus-rime输入法
 > ibus-rime 输入法
 
-# 还未配置完成 后续再详细研究
+# 实际使用非常稳定 不会再出现下划线和乱码的情况 不会破坏已经输入的文字
 
 ```
 sudo apt install ibus-rime
