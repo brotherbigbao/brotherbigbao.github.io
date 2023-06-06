@@ -39,3 +39,8 @@ virsh net-start default
 ```
 virsh net-autostart default
 ```
+
+参考文章: 
+
+> https://blog.csdn.net/a174817529/article/details/40379463
+> http://bloodiron888.blog.163.com/blog/static/1647332712010102295930204/
