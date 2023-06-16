@@ -1,6 +1,10 @@
 ![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
 
 ## Blog
+[macOS Catalina 10.15.7 安装 php7.1](linux/20230616-macos-catalina-install-php7.1.md) created_at：2023-06-16
+>macOS安装老版本PHP
+
+
 [ubuntu desktop 安装kvm](linux/20230606-ubuntu-kvm.md) created_at：2023-06-06
 >kvm 虚拟机的安装和使用
 
@@ -229,12 +233,12 @@
 >subtitle not define
 
 
-[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
->转自: 《Mastering NGINX》Second Edition
-
-
 [location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
 >转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
+
+
+[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
+>转自: 《Mastering NGINX》Second Edition
 
 
 [homebrew 操作指南](homebrew/20170824-homebrew.md) created_at：2017-08-24
@@ -245,11 +249,11 @@
 >mysql使用记录
 
 
-[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -257,11 +261,11 @@
 >Git使用记录
 
 
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
 >subtitle not define
 
 
