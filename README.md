@@ -1,7 +1,7 @@
 ![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
 
 ## Blog
-[macOS Catalina 10.15.7 安装 php7.1](linux/20230616-macos-catalina-install-php7.1.md) created_at：2023-06-16
+[macOS Catalina 10.15.7 安装 php7.1](php/20230616-macos-catalina-install-php7.1.md) created_at：2023-06-16
 >macOS安装老版本PHP
 
 
