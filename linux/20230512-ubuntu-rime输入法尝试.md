@@ -19,6 +19,24 @@ ibus-setup //ubuntu22.04就用自带的输入法配置界面吧
 
 ![image](resource/ubuntu-rime.png)
 
+# 左 shift 键 默认行为修改
+
+原来是
+
+```
+    Shift_L: inline_ascii
+    Shift_R: commit_text
+```
+
+改成
+
+```
+    Shift_L: commit_text
+    Shift_R: inline_ascii
+```
+
+这样可以和mac的快捷键保持一致， 左shift在输入中也可以直接切换中英文了
+
 > https://github.com/rime/librime
 > https://github.com/rime/ibus-rime
 > https://github.com/rime/home/wiki/RimeWithIBus
