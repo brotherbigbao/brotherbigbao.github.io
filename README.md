@@ -1,6 +1,10 @@
 ![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
 
 ## Blog
+[php线程安全 线程非安全？](php/20230725-php-thread-safety.md) created_at：2023-07-25
+>php线程安全相关
+
+
 [macOS Catalina 10.15.7 安装 php7.1](php/20230616-macos-catalina-install-php7.1.md) created_at：2023-06-16
 >macOS安装老版本PHP
 
@@ -65,12 +69,12 @@
 >php-fpm并不是每次请求就销毁
 
 
-[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
->原因是yii2-queue 取到一条消息后，会fork子进程
-
-
 [yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
 >yii2中mysql并没有重连机制 需要手动修改
+
+
+[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
+>原因是yii2-queue 取到一条消息后，会fork子进程
 
 
 [grep 的使用](linux/20210414-grep.md) created_at：2021-04-14
@@ -253,7 +257,7 @@
 >subtitle not define
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -261,11 +265,11 @@
 >Git使用记录
 
 
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
 >subtitle not define
 
 
