@@ -1,6 +1,8 @@
 # Install PocketMine-MP
 > 在linux或mac上的安装
 
+[minecraft国际版下载](https://mc.minebbs.com/#/)
+
 [官方文档](https://doc.pmmp.io/en/rtfd/installation/get-dot-pmmp-dot-io.html#installing-updating-to-the-latest-version)
 
 [官方插件开发文档](https://doc.pmmp.io/en/rtfd/developer-resources.html)
