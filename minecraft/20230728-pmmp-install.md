@@ -2,6 +2,7 @@
 > 在linux或mac上的安装
 
 [minecraft国际版下载](https://www.minebbs.com/minecraft/)
+
 [minecraft国际版下载](https://mc.minebbs.com/#/)
 
 [官方文档](https://doc.pmmp.io/en/rtfd/installation/get-dot-pmmp-dot-io.html#installing-updating-to-the-latest-version)
