@@ -1,6 +1,14 @@
 ![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
 
 ## Blog
+[Pmmp插件互相信赖问题](minecraft/20230816-pmmp-plugin.md) created_at：2023-08-16
+>插件可以使用phar注入方式 注入到另一个phar包中 可以自动加载
+
+
+[Install PocketMine-MP](minecraft/20230728-pmmp-install.md) created_at：2023-07-28
+>在linux或mac上的安装
+
+
 [php线程安全 线程非安全？](php/20230725-php-thread-safety.md) created_at：2023-07-25
 >php线程安全相关
 
@@ -253,10 +261,6 @@
 >mysql使用记录
 
 
-[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
->subtitle not define
-
-
 [composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
@@ -266,6 +270,10 @@
 
 
 [xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+>subtitle not define
+
+
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
 >subtitle not define
 
 
