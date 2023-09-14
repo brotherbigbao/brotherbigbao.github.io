@@ -74,11 +74,13 @@ sudo systemctl status ssh
 
 ```
 
-# gnome-tweaks 更改键盘映射
+# gnome-tweaks 更改键盘映射 中文名：优化 安装好后会自动放在工具文件夹下
 
 在ubuntu应用商店就可以搜索安装
 
 或者在命令行安装: sudo apt install gnome-tweaks
+
+然后交换左win 和 左 ctrl 位置
 
 ```
 or Ubuntu 20.04, you should relace the command (aka. Windows/ Win) key with the meta key.
