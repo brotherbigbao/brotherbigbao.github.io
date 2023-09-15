@@ -11,7 +11,7 @@ https://github.com/rofl0r/proxychains-ng
 ubuntu22.04自带这个， 但名字叫： proxychains4
 
 ```
-==========================================
+# 查找软件包
 apt search proxychains-ng
 正在排序... 完成
 全文搜索... 完成  
@@ -21,7 +21,7 @@ libproxychains4/jammy 4.16-1 amd64
 proxychains4/jammy 4.16-1 amd64
   redirect connections through socks/http proxies (proxychains-ng)
 
-==========================================
+# 查看软件包详情 确定是我们要找的ng版本
 apt show proxychains4
 
 Package: proxychains4
@@ -64,3 +64,35 @@ Description: redirect connections through socks/http proxies (proxychains-ng)
 但是我使用 dep 更新信赖的时候会报错， 可能有兼容性问题， 有时间可以试下更改 proxy_dns 为 proxy_dns_old 。
 
 总结： proxychains 配置比较简单， 一般命令行使用还是很方便的， 但是不支持域名白名单，只支持IP白名单，某些复杂的软件会有问题。
+
+## privoxy
+
+官方： https://www.privoxy.org/
+
+```
+#直接安装就可以
+sudo apt install privoxy
+
+#查看服务是否启动
+systemctl status privoxy
+
+● privoxy.service - Privacy enhancing HTTP Proxy
+     Loaded: loaded (/lib/systemd/system/privoxy.service; enabled; vendor preset: enabled)
+     Active: active (running) since Fri 2023-09-15 11:21:42 CST; 10s ago
+       Docs: man:privoxy(8)
+             https://www.privoxy.org/user-manual/
+    Process: 109749 ExecStart=/usr/sbin/privoxy --pidfile $PIDFILE --user $OWNER $CONFIGFILE (code=exited, status=0/SUCCESS)
+   Main PID: 109752 (privoxy)
+      Tasks: 1 (limit: 9324)
+     Memory: 1.3M
+     CGroup: /system.slice/privoxy.service
+             └─109752 /usr/sbin/privoxy --pidfile /run/privoxy.pid --user privoxy /etc/privoxy/config
+
+9月 15 11:21:41 liuyibao-ubuntu systemd[1]: Starting Privacy enhancing HTTP Proxy...
+9月 15 11:21:42 liuyibao-ubuntu systemd[1]: Started Privacy enhancing HTTP Proxy.
+
+#默认8118端口已经启动
+netstat -an | grep 8118
+tcp        0      0 127.0.0.1:8118          0.0.0.0:*               LISTEN     
+tcp6       0      0 ::1:8118                :::*                    LISTEN
+```
