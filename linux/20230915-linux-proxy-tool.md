@@ -55,6 +55,12 @@ Description: redirect connections through socks/http proxies (proxychains-ng)
 
 注意一下 apt search 命令会检索描述， 搜出的结果会比较多。 建议先用apt list 命令先按照软件名称搜索，搜索不到的话再用 apt search 搜索。
 
+配置文件路径: /etc/proxychains4.conf
 
+在配置文件末尾增加代理配置： socks5 127.0.0.1 7070
 
+测试命令：proxychains curl www.google.com.hk， 的确可以正常使用
 
+但是我使用 dep 更新信赖的时候会报错， 可能有兼容性问题， 有时间可以试下更改 proxy_dns 为 proxy_dns_old 。
+
+总结： proxychains 配置比较简单， 一般命令行使用还是很方便的， 但是不支持域名白名单，只支持IP白名单，某些复杂的软件会有问题。
