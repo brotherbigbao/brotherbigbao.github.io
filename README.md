@@ -1,6 +1,10 @@
 ![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)
 
 ## Blog
+[Linux 下的代理工具  privoxy, proxychains, tor](linux/20230915-linux-proxy-tool.md) created_at：2023-09-15
+>privoxy, proxychains, tor 哪个更好用呢
+
+
 [go程序托管 supervisor 遇到 too many open files](linux/20230911-supervisor-too-many-open-files.md) created_at：2023-09-11
 >go程序托管 supervisor 遇到 too many open files
 
@@ -81,12 +85,12 @@
 >php-fpm并不是每次请求就销毁
 
 
-[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
->原因是yii2-queue 取到一条消息后，会fork子进程
-
-
 [yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
 >yii2中mysql并没有重连机制 需要手动修改
+
+
+[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
+>原因是yii2-queue 取到一条消息后，会fork子进程
 
 
 [grep 的使用](linux/20210414-grep.md) created_at：2021-04-14
@@ -265,7 +269,11 @@
 >mysql使用记录
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+>subtitle not define
+
+
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -273,11 +281,7 @@
 >Git使用记录
 
 
-[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
->subtitle not define
-
-
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
