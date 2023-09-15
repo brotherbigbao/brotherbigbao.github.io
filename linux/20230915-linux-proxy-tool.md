@@ -138,6 +138,8 @@ sudo systemctl restart privoxy
 
 详细参考大佬 gist 页面教程： [https://gist.github.com/MarshalW/49c0a4e082e3163967748672d278385b](https://gist.github.com/MarshalW/49c0a4e082e3163967748672d278385b)
 
+另一篇文章：[https://www.cnblogs.com/hongdada/p/10787924.html](https://www.cnblogs.com/hongdada/p/10787924.html)
+
 也可以访问官网详细研究。
 
 附gist页面一部分教程：
@@ -184,3 +186,5 @@ alias proxyprivoxy='export https_proxy=http://127.0.0.1:8118 http_proxy=http://1
 ```
 
 总结 privoxy 功能非常强大， 一般情况下用这个就可以。除非软件不能使用代理， 可以使用 proxychains。
+
+也可以将 privoxy 作为 proxychains 的源代理。 
