@@ -96,3 +96,91 @@ netstat -an | grep 8118
 tcp        0      0 127.0.0.1:8118          0.0.0.0:*               LISTEN     
 tcp6       0      0 ::1:8118                :::*                    LISTEN
 ```
+
+默认配置是监听 8118， 这个不需要修改
+
+配置文件都放在这个目录： /etc/privoxy
+
+主配置文件是：/etc/privoxy/config
+
+修改 /etc/privoxy/config, 在actionsfile栏添加如下， 引入自定义配置文件：
+
+```
+actionsfile whitelist.action # 白名单配置
+```
+
+新增自定义配置文件
+
+```
+cd /etc/privoxy
+vim whitelist.action
+```
+
+配置文件如下，表示默认走 127.0.0.1:7070 socks5代理， 配置在 {direct} 列表下的不走代理， 直接连接
+
+```
+{{alias}}
+proxy = +forward-override{forward-socks5 127.0.0.1:7070 .}
+direct = +forward-override{forward .}
+
+{proxy}
+/
+
+{direct}
+.cn
+.baidu.com
+```
+
+```
+# 重启 privoxy
+sudo systemctl restart privoxy
+```
+
+详细参考大佬 gist 页面教程： [https://gist.github.com/MarshalW/49c0a4e082e3163967748672d278385b](https://gist.github.com/MarshalW/49c0a4e082e3163967748672d278385b)
+
+也可以访问官网详细研究。
+
+附gist页面一部分教程：
+
+这个配置默认全部直接访问（不通过socks5代理），需要代理的列在{whitelist}下面：
+
+```
+{{alias}}
+direct = +forward-override{forward .}
+whitelist = +forward-override{forward-socks5 localhost:1337 .}
+
+#default
+{direct}
+/
+
+#whitelist
+{whitelist}
+.google.com
+.cip.cc
+.docker.com
+.docker.io
+.github.com
+```
+
+这种配置是默认都走socks5代理，{direct}下定义直接访问：
+
+```
+{{alias}}
+proxy = +forward-override{forward-socks5 localhost:1337 .}
+direct = +forward-override{forward .}
+
+{proxy}
+/
+
+{direct}
+.cn
+.cip.cc
+```
+
+要在命令行下用， 可以配置这几个环境变量 https_proxy|http_proxy|all_proxy，建议配置为alias方便使用：
+
+```
+alias proxyprivoxy='export https_proxy=http://127.0.0.1:8118 http_proxy=http://127.0.0.1:8118 all_proxy=socks5://127.0.0.1:8118'
+```
+
+总结 privoxy 功能非常强大， 一般情况下用这个就可以。除非软件不能使用代理， 可以使用 proxychains。
