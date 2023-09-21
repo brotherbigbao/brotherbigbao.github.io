@@ -44,7 +44,7 @@ class EventListener implements Listener{
 - Y轴的正方向为上，其坐标反映了玩家位置的高低程度（其中海平面为63），另见海拔高度。
 - 坐标系的单位长度为一个方块长，基于测量方法，每一方块的体积为1立方米。
 
-[坐标系](20230921_img/minecraft_axes.webp)
+![坐标系](20230921_img/minecraft_axes.webp)
 
 [摘自: https://minecraft.fandom.com/zh/wiki/%E5%9D%90%E6%A0%87?variant=zh](https://minecraft.fandom.com/zh/wiki/%E5%9D%90%E6%A0%87?variant=zh)
 
