@@ -1,7 +1,7 @@
 # PocketMine MP 插件开发学习记录
 > PocketMine MP 插件开发学习记录
 
-## 比较重要的一个方块类 VanillaBlocks
+## 1.比较重要的一个方块类 VanillaBlocks
 
 VanillaBlocks
 
@@ -48,4 +48,4 @@ class EventListener implements Listener{
 
 [摘自: https://minecraft.fandom.com/zh/wiki/%E5%9D%90%E6%A0%87?variant=zh](https://minecraft.fandom.com/zh/wiki/%E5%9D%90%E6%A0%87?variant=zh)
 
-## Item 和 Block 有什么区别呢？
+## 2.Item 和 Block 有什么区别呢？
