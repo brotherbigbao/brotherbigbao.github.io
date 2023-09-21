@@ -11,3 +11,12 @@ bin/php7/bin/php virions/InvMenu.phar /path/to/your/plugin.phar
 That will inject the InvMenu virion into your phar plugin.
 
 > https://forums.pmmp.io/threads/invmenu.7303/
+
+
+# 比较重要的一个类
+
+VanillaBlocks
+
+这个好像是用于生成新的Block
+
+Item 和 Block 有什么区别呢？
