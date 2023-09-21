@@ -24,3 +24,9 @@ cd ~
 mkdir Pmmp
 curl -sL https://get.pmmp.io | bash -s -
 ```
+
+## 直接从代码执行
+
+```
+~/Pmmp/bin/php7/bin/php src/PocketMine.php
+```
