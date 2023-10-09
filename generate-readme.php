@@ -47,7 +47,7 @@ foreach ($mdFiles as $createDate => $mdFile) {
 }
 //print_r($readmeLists);
 
-$statContent = '![]( https://visitor-badge.glitch.me/badge?page_id=liuyibao)';
+$statContent = '![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)';
 
 // 生成README.md
 $readMeContent = '';
