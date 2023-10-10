@@ -14,3 +14,5 @@ sudo apt install libxcb-xinerama0
 项目安装目录在： /opt/xdroid/
 
 卸载脚本：/opt/xdroid/uninstall
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
