@@ -5,6 +5,10 @@
 >安装后无法打开解决
 
 
+[stty 设置终端快捷键](linux/20231010-stty设置终端快捷键.md) created_at：2023-10-10
+>尽量和macos键位保持一致
+
+
 [usermod 禁用登录账户](linux/20230927-usermod-禁用登录账户.md) created_at：2023-09-27
 >禁用及解禁账户
 
@@ -105,12 +109,12 @@
 >php-fpm并不是每次请求就销毁
 
 
-[yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
->yii2中mysql并没有重连机制 需要手动修改
-
-
 [yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
 >原因是yii2-queue 取到一条消息后，会fork子进程
+
+
+[yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
+>yii2中mysql并没有重连机制 需要手动修改
 
 
 [grep 的使用](linux/20210414-grep.md) created_at：2021-04-14
@@ -293,20 +297,20 @@
 >subtitle not define
 
 
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
->subtitle not define
+[Git使用记录](other/20170609-git.md) created_at：2017-06-09
+>Git使用记录
 
 
 [xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
 
-[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
 >subtitle not define
 
 
-[Git使用记录](other/20170609-git.md) created_at：2017-06-09
->Git使用记录
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+>subtitle not define
 
 
 ## Recommend Link
