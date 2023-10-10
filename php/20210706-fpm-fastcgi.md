@@ -51,3 +51,6 @@ server再把结果返回给浏览器。
 不对。php-cgi只是解释PHP脚本的程序而已。
 
 
+
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

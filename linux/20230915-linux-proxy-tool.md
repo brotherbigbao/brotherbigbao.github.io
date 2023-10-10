@@ -188,3 +188,5 @@ alias proxyprivoxy='export https_proxy=http://127.0.0.1:8118 http_proxy=http://1
 总结 privoxy 功能非常强大， 一般情况下用这个就可以。除非软件不能使用代理， 可以使用 proxychains。
 
 也可以将 privoxy 作为 proxychains 的源代理。 
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

@@ -11,3 +11,6 @@ bin/php7/bin/php virions/InvMenu.phar /path/to/your/plugin.phar
 That will inject the InvMenu virion into your phar plugin.
 
 > https://forums.pmmp.io/threads/invmenu.7303/
+
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

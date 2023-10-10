@@ -239,3 +239,6 @@ DW/BI系统几乎总是要求数据尽可能最细粒度来表示，不是因为
 
 ### 事实表类型：事务、周期快照、累积快照 p81
 
+
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

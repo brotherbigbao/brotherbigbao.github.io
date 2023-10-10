@@ -124,3 +124,5 @@ Extension ssh2 enabled in php.ini
 ```
 
 扩展安装成功，配置文件也自动更改了
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

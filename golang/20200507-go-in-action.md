@@ -136,3 +136,6 @@ Methods Receivers Values
 
 - 嵌入类型 公开或未公开的类型  略
 
+
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

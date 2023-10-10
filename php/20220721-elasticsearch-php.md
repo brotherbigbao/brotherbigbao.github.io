@@ -49,3 +49,5 @@ echo $client->get($params);
 
 - [忽略异常](https://www.elastic.co/guide/en/elasticsearch/client/php-api/6.x/_ignoring_exceptions.html)
 - [忽略异常](https://www.elastic.co/guide/cn/elasticsearch/guide/current/create-doc.html)
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

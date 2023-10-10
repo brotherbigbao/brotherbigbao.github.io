@@ -42,3 +42,5 @@ replace 的用法很簡單，你可以在 better/library 的 composer.json 裡�
 內容來源參考： [How does the “replace” property work with composer?](http://stackoverflow.com/questions/18882201/how-does-the-replace-property-work-with-composer/18905069#18905069)
 
 本文翻译来源： [理解 composer.json 的 replace](https://jaceju.net/composer-replace/)
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

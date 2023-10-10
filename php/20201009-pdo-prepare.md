@@ -72,3 +72,5 @@ MYSQL预处理在prepare阶段就能检测出sql语句的错误，而使用PDO�
 不知道你是否听懂~~~
 
 [转自此处](https://www.yiichina.com/topic/6879)
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

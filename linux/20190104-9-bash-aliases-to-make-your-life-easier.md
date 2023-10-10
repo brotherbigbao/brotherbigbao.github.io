@@ -167,3 +167,5 @@ Do you have other shortcuts that you use on a daily basis? Share them here!
 Follow me on Twitter @remykarem for digested articles and interactive demos on AI, Deep Learning, and Front End Web Dev.
 
 [Copy from here](https://medium.com/@raimibinkarim/9-bash-aliases-to-make-your-life-easier-3e5855aa95fa)
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

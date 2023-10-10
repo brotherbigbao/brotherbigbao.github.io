@@ -43,3 +43,5 @@ ibus-setup //ubuntu22.04就用自带的输入法配置界面吧
 
 > https://blog.csdn.net/Sacredness/article/details/92195032
 > https://www.cnblogs.com/keatonlao/p/12983158.html
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

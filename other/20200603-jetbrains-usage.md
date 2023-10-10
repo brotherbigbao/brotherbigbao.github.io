@@ -32,3 +32,5 @@ return $member_query->count();
 ```
 
 > 在正则表达式中dot几乎匹配任意一个字符，但是不匹配换行符\n
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

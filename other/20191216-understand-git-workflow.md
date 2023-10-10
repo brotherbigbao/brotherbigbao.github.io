@@ -157,3 +157,5 @@ git reset
 译者：@candyhorse
 
 此文翻译在图灵：https://www.ituring.com.cn/article/8667
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

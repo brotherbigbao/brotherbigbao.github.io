@@ -43,3 +43,5 @@ Every threading extension made for PHP has built on top of the ZTS mode, and fro
 Implementing threading properly into PHP would require a significant amount of changes to the PHP core, which it seems no one in the world is inclined to do. Until the time comes when a knight in shining armour implements threading properly into PHP, we’re stuck with stuff like pthreads and all the hacks necessary to make it even remotely usable.
 
 [pmmp develop reference](https://doc.pmmp.io/en/rtfd/developer-reference/threading-in-php-wtf.html)
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

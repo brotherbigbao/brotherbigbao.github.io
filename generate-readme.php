@@ -31,6 +31,9 @@ foreach ($subDirList as $subDir) {
 krsort($mdFiles);
 //print_r($mdFiles);
 
+//网站访问统计
+$statContent = '![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)';
+
 // 解析md文件内容
 $readmeLists = [];
 foreach ($mdFiles as $createDate => $mdFile) {
@@ -44,10 +47,14 @@ foreach ($mdFiles as $createDate => $mdFile) {
         'path' => str_replace($rootDir . '/', '', $mdFile),
         'createDate' => substr($createDate, 0, 8),
     ];
+
+    $blogContent = file_get_contents($mdFile);
+    if (strpos($blogContent, '![Visitor Count]') === false) {
+        //添加网站统计
+        file_put_contents($mdFile, "\n\n" . $statContent, FILE_APPEND);
+    }
 }
 //print_r($readmeLists);
-
-$statContent = '![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)';
 
 // 生成README.md
 $readMeContent = '';

@@ -49,3 +49,5 @@ class EventListener implements Listener{
 [摘自: https://minecraft.fandom.com/zh/wiki/%E5%9D%90%E6%A0%87?variant=zh](https://minecraft.fandom.com/zh/wiki/%E5%9D%90%E6%A0%87?variant=zh)
 
 ## 2.Item 和 Block 有什么区别呢？
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)

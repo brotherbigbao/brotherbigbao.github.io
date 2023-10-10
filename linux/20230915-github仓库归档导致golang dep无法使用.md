@@ -44,3 +44,5 @@ fatal: 无法访问 'https://github.com/go-xorm/xorm/'：The requested URL retur
 找到目录 $GOPATH/pkg/dep/sources/https---github.com-go--xorm-xorm/, 应该就是缺少这个目录， 从另一台机器 copy 过来。
 
 再执行 dep ensure 就成功了。
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
