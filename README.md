@@ -1,6 +1,10 @@
 ![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
 
 ## Blog
+[ubuntu jetbrains 系列 ide 输入法不跟随问题](linux/20231011-jetbrains-idea-ubuntu-wrong-position-of-input-window.md) created_at：2023-10-11
+>输入法不跟随问题
+
+
 [Linux Ubuntu22.04 Android模拟器 麟卓卓懿](linux/20231010-linux-android-vm-麟卓卓懿.md) created_at：2023-10-10
 >安装后无法打开解决
 
@@ -17,16 +21,16 @@
 >PocketMine MP 插件开发学习记录
 
 
-[Github Personal access token](linux/20230915-github-personal-access-token.md) created_at：2023-09-15
->git clone https 路径的项目时可能会需要
+[dep ensure 失败， fatal: could not read Username for 'https://github.com'， ERROR: Repository `go-xorm/xorm' is disabled.](linux/20230915-github仓库归档导致golang dep无法使用.md) created_at：2023-09-15
+>github 仓库被归档， 导致golang dep 更新信赖失败
 
 
 [Linux 下的代理工具  privoxy, proxychains, tor](linux/20230915-linux-proxy-tool.md) created_at：2023-09-15
 >privoxy, proxychains, tor 哪个更好用呢
 
 
-[dep ensure 失败， fatal: could not read Username for 'https://github.com'， ERROR: Repository `go-xorm/xorm' is disabled.](linux/20230915-github仓库归档导致golang dep无法使用.md) created_at：2023-09-15
->github 仓库被归档， 导致golang dep 更新信赖失败
+[Github Personal access token](linux/20230915-github-personal-access-token.md) created_at：2023-09-15
+>git clone https 路径的项目时可能会需要
 
 
 [go程序托管 supervisor 遇到 too many open files](linux/20230911-supervisor-too-many-open-files.md) created_at：2023-09-11
@@ -293,19 +297,19 @@
 >mysql使用记录
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
->subtitle not define
-
-
 [Git使用记录](other/20170609-git.md) created_at：2017-06-09
 >Git使用记录
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
 [laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+>subtitle not define
+
+
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
 

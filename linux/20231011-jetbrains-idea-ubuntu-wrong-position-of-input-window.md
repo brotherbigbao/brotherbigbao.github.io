@@ -7,3 +7,6 @@
 
 [https://youtrack.jetbrains.com/issue/JBR-2460](https://youtrack.jetbrains.com/issue/JBR-2460)
 
+
+
+![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
