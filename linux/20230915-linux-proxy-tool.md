@@ -61,9 +61,9 @@ Description: redirect connections through socks/http proxies (proxychains-ng)
 
 测试命令：proxychains curl www.google.com.hk， 的确可以正常使用
 
-但是我使用 dep 更新信赖的时候会报错， 可能有兼容性问题， 有时间可以试下更改 proxy_dns 为 proxy_dns_old 。
+但是我使用 dep 更新信赖的时候会报错(后经测试是本地依赖问题，不是proxychains问题)， 可能有兼容性问题， 有时间可以试下更改 proxy_dns 为 proxy_dns_old 。
 
-总结： proxychains 配置比较简单， 一般命令行使用还是很方便的， 但是不支持域名白名单，只支持IP白名单，某些复杂的软件会有问题。
+总结： proxychains 配置比较简单， 一般命令行使用还是很方便的， 但是不支持域名白名单，只支持IP白名单。
 
 ## privoxy
 
