@@ -1,6 +1,10 @@
 ![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
 
 ## Blog
+[ubuntu 禁止用户执行任何命令](linux/20231027-禁止用户执行任何命令.md) created_at：2023-10-27
+>禁止用户执行任何命令
+
+
 [Ubuntu22.04 字体 Garuda](linux/20231012-ubuntu-font.md) created_at：2023-10-12
 >ubuntu font Garuda
 
@@ -9,12 +13,12 @@
 >输入法不跟随问题
 
 
-[Linux Ubuntu22.04 Android模拟器 麟卓卓懿](linux/20231010-linux-android-vm-麟卓卓懿.md) created_at：2023-10-10
->安装后无法打开解决
-
-
 [stty 设置终端快捷键](linux/20231010-stty设置终端快捷键.md) created_at：2023-10-10
 >尽量和macos键位保持一致
+
+
+[Linux Ubuntu22.04 Android模拟器 麟卓卓懿](linux/20231010-linux-android-vm-麟卓卓懿.md) created_at：2023-10-10
+>安装后无法打开解决
 
 
 [usermod 禁用登录账户](linux/20230927-usermod-禁用登录账户.md) created_at：2023-09-27
@@ -25,16 +29,16 @@
 >PocketMine MP 插件开发学习记录
 
 
-[Linux 下的代理工具  privoxy, proxychains, tor](linux/20230915-linux-proxy-tool.md) created_at：2023-09-15
->privoxy, proxychains, tor 哪个更好用呢
-
-
 [Github Personal access token](linux/20230915-github-personal-access-token.md) created_at：2023-09-15
 >git clone https 路径的项目时可能会需要
 
 
 [dep ensure 失败， fatal: could not read Username for 'https://github.com'， ERROR: Repository `go-xorm/xorm' is disabled.](linux/20230915-github仓库归档导致golang dep无法使用.md) created_at：2023-09-15
 >github 仓库被归档， 导致golang dep 更新信赖失败
+
+
+[Linux 下的代理工具  privoxy, proxychains, tor](linux/20230915-linux-proxy-tool.md) created_at：2023-09-15
+>privoxy, proxychains, tor 哪个更好用呢
 
 
 [go程序托管 supervisor 遇到 too many open files](linux/20230911-supervisor-too-many-open-files.md) created_at：2023-09-11
@@ -117,12 +121,12 @@
 >php-fpm并不是每次请求就销毁
 
 
-[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
->原因是yii2-queue 取到一条消息后，会fork子进程
-
-
 [yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
 >yii2中mysql并没有重连机制 需要手动修改
+
+
+[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
+>原因是yii2-queue 取到一条消息后，会fork子进程
 
 
 [grep 的使用](linux/20210414-grep.md) created_at：2021-04-14
@@ -285,12 +289,12 @@
 >subtitle not define
 
 
-[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
->转自: 《Mastering NGINX》Second Edition
-
-
 [location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
 >转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
+
+
+[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
+>转自: 《Mastering NGINX》Second Edition
 
 
 [homebrew 操作指南](homebrew/20170824-homebrew.md) created_at：2017-08-24
@@ -305,7 +309,7 @@
 >subtitle not define
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -313,7 +317,7 @@
 >subtitle not define
 
 
-[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
 
