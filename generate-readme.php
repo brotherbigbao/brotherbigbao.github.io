@@ -41,6 +41,10 @@ foreach ($mdFiles as $createDate => $mdFile) {
     $title = fgets($mdFileHandle);
     $subTitle = fgets($mdFileHandle);
     fclose($mdFileHandle);
+    if (substr(trim($title), -8) === 'no-index') {
+        echo "ignore " . $title . "\n";
+        continue;
+    }
     $readmeLists[] = [
         'title' => $title !== false ? trim(trim($title, '#')) : '标题未定义',
         'subTitle' => $subTitle !== false ? trim(trim($subTitle, '>')) : '副标题未定义',
