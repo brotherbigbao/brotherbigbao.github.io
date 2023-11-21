@@ -1,9 +1,11 @@
-# ubuntu install MySQL5.7
+# ubuntu install MySQL5.7 (直接下载二进制文件安装)
 > Installing MySQL on Unix/Linux Using Generic Binaries
 
 - [MySQL官方文档](https://dev.mysql.com/doc/refman/5.7/en/binary-installation.html)
 - [官方下载链接](https://downloads.mysql.com/archives/community/)
 - [中文说明 CSDN blog](https://blog.csdn.net/javaanddonet/article/details/113277953)
+
+- [通过APT安装旧版本MySQL 实测Ubuntu22.04无法选择mysql5.7 已放弃](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/)
 
 
 
