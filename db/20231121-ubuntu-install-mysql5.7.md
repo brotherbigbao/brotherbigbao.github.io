@@ -8,6 +8,7 @@
 - [通过APT安装旧版本MySQL 实测Ubuntu22.04无法选择mysql5.7 已放弃](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/)
 
 
+## 安装
 
 Table 2.3 MySQL Installation Layout for Generic Unix/Linux Binary Package
 
@@ -41,3 +42,21 @@ $> cp support-files/mysql.server /etc/init.d/mysql.server
 cp support-files/mysql.server /etc/init.d/mysql.server  作用是重启后可以使用 systemctl status mysql 等命令方便启停
 
 ![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+
+## 增加配置文件 (默认没有配置文件)
+
+sudo vim /etc/my.cnf
+
+为了解决默认 datetime 格式不能保存 '0000-00-00 00:00:00', 输入以下内容并保存重启mysql
+
+```
+[mysqld]
+
+sql_mode=ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+```
+
+## 问题 SELECT list is not in GROUP BY clause and contains nonaggregated column
+
+SELECT list 必须在查询列表中解决
+
+去除 ONLY_FULL_GROUP_BY
