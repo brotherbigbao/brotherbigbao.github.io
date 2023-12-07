@@ -62,4 +62,4 @@ reserved > 100，报失败队列过多，重启进程  supervisorctl restart que
 测试了，redis出问题的话进程会挂掉，db出问题不会挂掉，这是因为在队列消费之前就连接redis了，会遵守command命令的异常机制，但是在队列消费逻辑内为了使重试机制生效，所有的异常都会被捕获掉
 
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

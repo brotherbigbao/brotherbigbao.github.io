@@ -32,7 +32,7 @@ server {
 	#
 	# include snippets/snakeoil.conf;
 
-	root /home/liuyibao/Code/phpMyAdmin-4.6.4-all-languages;
+	root /home/yourname/Code/phpMyAdmin-4.6.4-all-languages;
 
 	# Add index.php to the list if you are using PHP
 	index index.php index.html index.htm index.nginx-debian.html;

@@ -32,7 +32,7 @@ server {
 	#
 	# include snippets/snakeoil.conf;
 
-	root /home/liuyibao/Code/sports.intra.local.ffan.com/www;
+	root /home/yourname/Code/sports.intra.local.ffan.com/www;
 
 	# Add index.php to the list if you are using PHP
 	index index.php index.html index.htm index.nginx-debian.html;

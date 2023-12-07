@@ -16,4 +16,4 @@ Observer 设计模式定义了对象间的一种一对多的依赖关系，当�
 [阅读全文请点击](https://www.ibm.com/developerworks/cn/opensource/os-cn-observerspl/)
 [Github DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP)
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

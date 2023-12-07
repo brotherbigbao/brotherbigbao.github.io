@@ -41,7 +41,7 @@ $> cp support-files/mysql.server /etc/init.d/mysql.server
 
 cp support-files/mysql.server /etc/init.d/mysql.server  作用是重启后可以使用 systemctl status mysql 等命令方便启停
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
 
 ## 增加配置文件 (默认没有配置文件)
 

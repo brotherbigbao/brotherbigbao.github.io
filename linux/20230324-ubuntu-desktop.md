@@ -94,7 +94,7 @@ Click Keyboard & Mouse > Additional Layout Options > Expand Alt/Win key behaviou
 
 > https://www.cnblogs.com/liuzhch1/p/16047019.html
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
 
 # 查看硬件信息-内存
 

@@ -29,4 +29,4 @@ sudo xattr -r -d com.apple.quarantine ~/Desktop/Parallels\ Desktop.app
 
 打包完之后就可以用这个dmg安装了。 注意目前只在Catalina下测试，更高版本不一定有用
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

@@ -31,4 +31,4 @@ curl -sL https://get.pmmp.io | bash -s -
 ~/Pmmp/bin/php7/bin/php src/PocketMine.php
 ```
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

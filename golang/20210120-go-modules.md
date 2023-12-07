@@ -27,4 +27,4 @@ go build -mod=vendor
 - [blog.golang.org/using-go-modules](https://blog.golang.org/using-go-modules)
 - [再探go modules：使用与细节](https://www.cnblogs.com/apocelipes/p/10295096.html)
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

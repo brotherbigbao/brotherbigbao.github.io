@@ -15,4 +15,4 @@ sudo apt install libxcb-xinerama0
 
 卸载脚本：/opt/xdroid/uninstall
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

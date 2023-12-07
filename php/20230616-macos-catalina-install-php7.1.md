@@ -62,7 +62,7 @@ Or, if you don't want/need a background service you can just run:
 
 ```
 #是mac
-if [ '/Users/liuyibao' = "$HOME" ];then
+if [ '/Users/yourname' = "$HOME" ];then
   export PATH="/usr/local/opt/php@7.1/bin:$PATH"
   export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
   export LDFLAGS="-L/usr/local/opt/php@7.1/lib"
@@ -125,4 +125,4 @@ Extension ssh2 enabled in php.ini
 
 扩展安装成功，配置文件也自动更改了
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

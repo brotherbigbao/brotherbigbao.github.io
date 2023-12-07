@@ -32,7 +32,7 @@ krsort($mdFiles);
 //print_r($mdFiles);
 
 //网站访问统计
-$statContent = '![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)';
+$statContent = '![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)';
 
 // 解析md文件内容
 $readmeLists = [];

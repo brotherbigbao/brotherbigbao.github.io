@@ -43,4 +43,4 @@ replace 的用法很簡單，你可以在 better/library 的 composer.json 裡�
 
 本文翻译来源： [理解 composer.json 的 replace](https://jaceju.net/composer-replace/)
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

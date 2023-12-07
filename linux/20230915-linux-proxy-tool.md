@@ -88,8 +88,8 @@ systemctl status privoxy
      CGroup: /system.slice/privoxy.service
              └─109752 /usr/sbin/privoxy --pidfile /run/privoxy.pid --user privoxy /etc/privoxy/config
 
-9月 15 11:21:41 liuyibao-ubuntu systemd[1]: Starting Privacy enhancing HTTP Proxy...
-9月 15 11:21:42 liuyibao-ubuntu systemd[1]: Started Privacy enhancing HTTP Proxy.
+9月 15 11:21:41 yourname-ubuntu systemd[1]: Starting Privacy enhancing HTTP Proxy...
+9月 15 11:21:42 yourname-ubuntu systemd[1]: Started Privacy enhancing HTTP Proxy.
 
 #默认8118端口已经启动
 netstat -an | grep 8118
@@ -189,4 +189,4 @@ alias proxyprivoxy='export https_proxy=http://127.0.0.1:8118 http_proxy=http://1
 
 也可以将 privoxy 作为 proxychains 的源代理。 
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

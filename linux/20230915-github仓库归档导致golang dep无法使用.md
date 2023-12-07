@@ -27,8 +27,8 @@ fatal: 无法读取远程仓库。
 ```
 git clone https://github.com/go-xorm/xorm
 正克隆到 'xorm'...
-Username for 'https://github.com': liuyibao
-Password for 'https://liuyibao@github.com': 
+Username for 'https://github.com': yourname
+Password for 'https://yourname@github.com': 
 remote: Repository `go-xorm/xorm' is disabled.
 remote: Please ask the owner to check their account.
 fatal: 无法访问 'https://github.com/go-xorm/xorm/'：The requested URL returned error: 403
@@ -45,4 +45,4 @@ fatal: 无法访问 'https://github.com/go-xorm/xorm/'：The requested URL retur
 
 再执行 dep ensure 就成功了。
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

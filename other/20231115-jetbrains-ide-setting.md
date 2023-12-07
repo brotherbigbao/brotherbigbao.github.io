@@ -10,7 +10,7 @@ ide-eval-resetter 插件
 ```
 #Custom VM Options
 
--javaagent:/home/liuyibao/Application/ja-netfilter-V2023/ja-netfilter.jar=jetbrains
+-javaagent:/home/yourname/Application/ja-netfilter-V2023/ja-netfilter.jar=jetbrains
 --add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
 --add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
 ```

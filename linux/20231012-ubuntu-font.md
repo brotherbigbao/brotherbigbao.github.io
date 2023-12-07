@@ -11,4 +11,4 @@ GNOME Tweak Tool > Fonts设置 ‘Windows Titles’ 和 ‘Interface’ 字体�
 
 如果你使用的是 Unity 可以使用 Unity Tweak Tool 来改变你的字体。
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

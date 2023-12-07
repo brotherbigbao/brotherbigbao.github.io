@@ -1,4 +1,4 @@
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
 
 ## Blog
 [ubuntu install MySQL5.7 (直接下载二进制文件安装)](db/20231121-ubuntu-install-mysql5.7.md) created_at：2023-11-21

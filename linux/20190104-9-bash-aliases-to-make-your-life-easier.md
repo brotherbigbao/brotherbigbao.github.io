@@ -168,4 +168,4 @@ Follow me on Twitter @remykarem for digested articles and interactive demos on A
 
 [Copy from here](https://medium.com/@raimibinkarim/9-bash-aliases-to-make-your-life-easier-3e5855aa95fa)
 
-![Visitor Count](https://profile-counter.glitch.me/liuyibao/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
