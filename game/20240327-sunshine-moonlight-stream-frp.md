@@ -15,5 +15,5 @@ https://github.com/fatedier/frp/blob/dev/conf/frpc_full_example.toml
 frps -c frps.toml
 
 windows客户端命令
-frpc.exe -c frpc.ini 
+frpc.exe -c frpc.toml
 ```
