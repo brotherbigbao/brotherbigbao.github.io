@@ -12,8 +12,8 @@ https://github.com/fatedier/frp/blob/dev/conf/frps_full_example.toml
 https://github.com/fatedier/frp/blob/dev/conf/frpc_full_example.toml
 
 服务器端命令
-frps -c frps.toml
+nohup ./frps -c frps.toml &
 
-windows客户端命令
+windows客户端命令(用管理员账号执行cmd)
 frpc.exe -c frpc.toml
 ```
