@@ -11,7 +11,7 @@ auth.method = "token"
 auth.token = "#234234dsfdsjewr!dsfvo"
 
 [[proxies]]
-name = "sunshine_stream_tcp1"
+name = "sunshine_stream_tcp_47984"
 type = "tcp"
 localIP = "127.0.0.1"
 localPort = 47984
@@ -19,7 +19,7 @@ localPort = 47984
 remotePort = 47984
 
 [[proxies]]
-name = "sunshine_stream_tcp2"
+name = "sunshine_stream_tcp_47989"
 type = "tcp"
 localIP = "127.0.0.1"
 localPort = 47989
@@ -27,7 +27,15 @@ localPort = 47989
 remotePort = 47989
 
 [[proxies]]
-name = "sunshine_stream_tcp3"
+name = "sunshine_stream_tcp_47990"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 47990
+# If remotePort is 0, frps will assign a random port for you
+remotePort = 47990
+
+[[proxies]]
+name = "sunshine_stream_tcp_48010"
 type = "tcp"
 localIP = "127.0.0.1"
 localPort = 48010
@@ -35,15 +43,7 @@ localPort = 48010
 remotePort = 48010
 
 [[proxies]]
-name = "sunshine_stream_udp1"
-type = "udp"
-localIP = "127.0.0.1"
-localPort = 5353
-# If remotePort is 0, frps will assign a random port for you
-remotePort = 5353
-
-[[proxies]]
-name = "sunshine_stream_udp2"
+name = "sunshine_stream_udp_47998"
 type = "udp"
 localIP = "127.0.0.1"
 localPort = 47998
@@ -51,7 +51,7 @@ localPort = 47998
 remotePort = 47998
 
 [[proxies]]
-name = "sunshine_stream_udp3"
+name = "sunshine_stream_udp_47999"
 type = "udp"
 localIP = "127.0.0.1"
 localPort = 47999
@@ -59,25 +59,9 @@ localPort = 47999
 remotePort = 47999
 
 [[proxies]]
-name = "sunshine_stream_udp4"
+name = "sunshine_stream_udp_48000"
 type = "udp"
 localIP = "127.0.0.1"
 localPort = 48000
 # If remotePort is 0, frps will assign a random port for you
 remotePort = 48000
-
-[[proxies]]
-name = "sunshine_stream_udp5"
-type = "udp"
-localIP = "127.0.0.1"
-localPort = 48002
-# If remotePort is 0, frps will assign a random port for you
-remotePort = 48002
-
-[[proxies]]
-name = "sunshine_stream_udp6"
-type = "udp"
-localIP = "127.0.0.1"
-localPort = 48010
-# If remotePort is 0, frps will assign a random port for you
-remotePort = 48010
