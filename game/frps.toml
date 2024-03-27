@@ -1,0 +1,11 @@
+bindAddr = "0.0.0.0"
+bindPort = 7000
+
+auth.method = "token"
+auth.token = "#234234dsfdsjewr!dsfvo"
+
+# Only allow frpc to bind ports you list. By default, there won't be any limit.
+allowPorts = [
+    { start = 47000, end = 49000 },
+    { single = 5353 }
+]
