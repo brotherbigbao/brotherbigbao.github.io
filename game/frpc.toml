@@ -1,12 +1,6 @@
 serverAddr = "0.0.0.0"
 serverPort = 7000
 
-# console or real logFile path like ./frpc.log
-log.to = "./frpc.log"
-# trace, debug, info, warn, error
-log.level = "info"
-log.maxDays = 3
-
 auth.method = "token"
 auth.token = "#234234dsfdsjewr!dsfvo"
 
