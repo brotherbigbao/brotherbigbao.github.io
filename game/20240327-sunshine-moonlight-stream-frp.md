@@ -1,6 +1,7 @@
 # sunshine moonlight stream frp :no-index
 > 串流
 
+## 开启串流
 ```
 wget https://openpublic.oss-cn-shanghai.aliyuncs.com/gamestream/frp_0.56.0_linux_amd64.tar.gz
 tar -zxvf frp_0.56.0_linux_amd64.tar.gz
@@ -16,4 +17,10 @@ nohup ./frps -c frps.toml &
 
 windows客户端命令(用管理员账号执行cmd)
 frpc.exe -c frpc.toml
+```
+
+## 关闭串流
+```
+ps -ef | grep frps
+kill ?
 ```
