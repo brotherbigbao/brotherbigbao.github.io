@@ -1,6 +1,8 @@
+# 注意serverAddr要改成你自己的公网IP
 serverAddr = "0.0.0.0"
 serverPort = 7000
 
+# 注意token改成你自己的 服务端和客户端要保持一致
 auth.method = "token"
 auth.token = "#234234dsfdsjewr!dsfvo"
 
