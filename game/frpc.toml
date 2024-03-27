@@ -1,4 +1,4 @@
-# 注意serverAddr要改成你自己的公网IP
+# 注意serverAddr要改成你自己的有公网IP机器的公网IP serverPort是用来给客户端绑定用的
 serverAddr = "0.0.0.0"
 serverPort = 7000
 

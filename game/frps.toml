@@ -1,3 +1,4 @@
+# bindAddr 0.0.0.0 表示监听本地所有可绑定的ip
 bindAddr = "0.0.0.0"
 bindPort = 7000
 
