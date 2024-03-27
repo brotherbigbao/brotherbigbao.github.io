@@ -27,14 +27,6 @@ localPort = 47989
 remotePort = 47989
 
 [[proxies]]
-name = "sunshine_stream_tcp_47990"
-type = "tcp"
-localIP = "127.0.0.1"
-localPort = 47990
-# If remotePort is 0, frps will assign a random port for you
-remotePort = 47990
-
-[[proxies]]
 name = "sunshine_stream_tcp_48010"
 type = "tcp"
 localIP = "127.0.0.1"
@@ -65,3 +57,29 @@ localIP = "127.0.0.1"
 localPort = 48000
 # If remotePort is 0, frps will assign a random port for you
 remotePort = 48000
+
+#下面可能都是不需要的
+
+[[proxies]]
+name = "sunshine_stream_udp_5353"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = 5353
+# If remotePort is 0, frps will assign a random port for you
+remotePort = 5353
+
+[[proxies]]
+name = "sunshine_stream_udp_48010"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = 48010
+# If remotePort is 0, frps will assign a random port for you
+remotePort = 48010
+
+[[proxies]]
+name = "sunshine_stream_udp_48002"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = 48002
+# If remotePort is 0, frps will assign a random port for you
+remotePort = 48002
