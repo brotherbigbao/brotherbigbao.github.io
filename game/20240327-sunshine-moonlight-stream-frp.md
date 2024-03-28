@@ -51,7 +51,7 @@ alias frpKill="kill $(ps -ef | grep frp | grep -v grep | awk '{print $2}')"
 ## windows客户端开启串流
 
 ```
-# windows客户端命令(用管理员账号执行cmd)
+# windows客户端命令(用管理员账号执行cmd) 或者新建frt.bat 填入下面代码 右键用管理员身份执行
 cd C:\Program Files\frp_0.56.0_windows_amd64
 frpc.exe -c frpc.toml
 ```
