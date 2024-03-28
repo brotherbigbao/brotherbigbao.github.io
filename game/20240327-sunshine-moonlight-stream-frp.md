@@ -34,6 +34,9 @@ ps -ef | grep frp | grep -v grep | awk '{print $2}'
 
 # 检查状态
 alias frpStatus='ps -ef | grep frp | grep -v grep'
+
+# 直接kill
+alias frpKill="kill $(ps -ef | grep frp | grep -v grep | awk '{print $2}')"
 ```
 
 ## windows客户端开启串流
