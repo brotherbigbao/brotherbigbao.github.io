@@ -1,5 +1,6 @@
 # sunshine moonlight stream frp :no-index
 > 串流
+> 内网穿透主要参考：https://www.ruterfu.com/2020/01/11/20200110-try-to-use-frp-build-mobile-game-device/， 作者这篇文章其实有点老了，实际以官方文档为准
 
 ## frp 内网穿透
 ```
@@ -12,6 +13,10 @@ https://github.com/fatedier/frp/blob/dev/conf/frps_full_example.toml
 客户端配置参考
 https://github.com/fatedier/frp/blob/dev/conf/frpc_full_example.toml
 
+穿透相关配置参照博客（文章内容有点老，可以做参考）：
+https://www.ruterfu.com/2020/01/11/20200110-try-to-use-frp-build-mobile-game-device/
+
+实际需要穿透哪些端口，看了Sunshine的web管理后台，上面有显示所有用到的端口，注意区分tcp和udp，别填错了
 ```
 
 ## frp 服务器开启穿透
