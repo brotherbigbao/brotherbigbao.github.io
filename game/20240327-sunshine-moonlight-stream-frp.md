@@ -14,6 +14,8 @@ https://github.com/fatedier/frp/blob/dev/conf/frpc_full_example.toml
 
 服务器端命令
 nohup ./frps -c frps.toml &
+可以配置到alias方便操作
+vim .profile
 alias frpStart='cd ~/frp_0.56.0_linux_amd64; nohup ./frps -c frps.toml &;'
 
 windows客户端命令(用管理员账号执行cmd)
