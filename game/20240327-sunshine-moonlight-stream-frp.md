@@ -1,7 +1,7 @@
 # sunshine moonlight stream frp :no-index
 > 串流
 
-## 开启串流
+## frp 内网穿透
 ```
 wget https://openpublic.oss-cn-shanghai.aliyuncs.com/gamestream/frp_0.56.0_linux_amd64.tar.gz
 tar -zxvf frp_0.56.0_linux_amd64.tar.gz
@@ -14,7 +14,7 @@ https://github.com/fatedier/frp/blob/dev/conf/frpc_full_example.toml
 
 ```
 
-## 服务器开启串流
+## frp 服务器开启穿透
 
 ```
 nohup ./frps -c frps.toml &
@@ -24,7 +24,7 @@ vim .profile
 alias frpStart='cd ~/frp_0.56.0_linux_amd64 && nohup ./frps -c frps.toml &'
 ```
 
-## 服务器关闭串流
+## frp 服务器关闭穿透
 ```
 ps -ef | grep frp | grep -v grep
 kill ?
@@ -39,7 +39,7 @@ alias frpStatus='ps -ef | grep frp | grep -v grep'
 alias frpKill="kill $(ps -ef | grep frp | grep -v grep | awk '{print $2}')"
 ```
 
-## 服务器最终命令配置
+## frp 服务器最终命令配置
 
 ```shell
 alias frpStart='cd ~/frp_0.56.0_linux_amd64 && nohup ./frps -c frps.toml &'
@@ -48,10 +48,26 @@ alias frpLog='cd ~/frp_0.56.0_linux_amd64 && tail -f nohup.out'
 alias frpKill="kill $(ps -ef | grep frp | grep -v grep | awk '{print $2}')"
 ```
 
-## windows客户端开启串流
+## frp windows客户端开启串流
 
 ```
 # windows客户端命令(用管理员账号执行cmd) 或者新建frt.bat 填入下面代码 右键用管理员身份执行
 cd C:\Program Files\frp_0.56.0_windows_amd64
 frpc.exe -c frpc.toml
+```
+
+## 相关仓库
+
+```
+# Sunshine 串流服务端
+https://github.com/LizardByte/Sunshine
+
+# ViGEmBus 安装Sunshine时会自动下载安装这个 但无法成Github下载 所以需要手动下载安装 好像是虚拟手柄相关的 不安装可能会有控制的问题
+https://github.com/nefarius/ViGEmBus
+
+# Moonlight 串流客户端
+https://github.com/moonlight-stream/moonlight-qt
+
+# frp内容穿透 发现这个非常实用 可以做很多事情
+https://github.com/fatedier/frp
 ```
