@@ -31,3 +31,5 @@ sudo apt install flameshot
 
 
 最后将这个快捷操作绑定到 PrtSc 键上，可能会提示与系统的截图功能相冲突，但可以忽略掉这个警告。
+
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

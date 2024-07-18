@@ -1,6 +1,14 @@
 ![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
 
 ## Blog
+[iTerm2](other/20240718-macos-iterm2-profiles.md) created_at：2024-07-18
+>subtitle not define
+
+
+[ubuntu 截屏工具 flameshot](linux/20240426-ubuntu截屏工具flameshot.md) created_at：2024-04-26
+>linux 截屏工具
+
+
 [jetbrains idea phpstorm pycharm free try 2021.2.2及以下版本](other/20240229-jetbrains-free-try-2021.2.2.md) created_at：2024-02-29
 >jetbrains idea 2021.2.2及以下版本免费试用
 
@@ -29,12 +37,12 @@
 >输入法不跟随问题
 
 
-[stty 设置终端快捷键](linux/20231010-stty设置终端快捷键.md) created_at：2023-10-10
->尽量和macos键位保持一致
-
-
 [Linux Ubuntu22.04 Android模拟器 麟卓卓懿](linux/20231010-linux-android-vm-麟卓卓懿.md) created_at：2023-10-10
 >安装后无法打开解决
+
+
+[stty 设置终端快捷键](linux/20231010-stty设置终端快捷键.md) created_at：2023-10-10
+>尽量和macos键位保持一致
 
 
 [usermod 禁用登录账户](linux/20230927-usermod-禁用登录账户.md) created_at：2023-09-27
@@ -45,16 +53,16 @@
 >PocketMine MP 插件开发学习记录
 
 
+[Github Personal access token](linux/20230915-github-personal-access-token.md) created_at：2023-09-15
+>git clone https 路径的项目时可能会需要
+
+
 [dep ensure 失败， fatal: could not read Username for 'https://github.com'， ERROR: Repository `go-xorm/xorm' is disabled.](linux/20230915-github仓库归档导致golang dep无法使用.md) created_at：2023-09-15
 >github 仓库被归档， 导致golang dep 更新信赖失败
 
 
 [Linux 下的代理工具  privoxy, proxychains, tor](linux/20230915-linux-proxy-tool.md) created_at：2023-09-15
 >privoxy, proxychains, tor 哪个更好用呢
-
-
-[Github Personal access token](linux/20230915-github-personal-access-token.md) created_at：2023-09-15
->git clone https 路径的项目时可能会需要
 
 
 [go程序托管 supervisor 遇到 too many open files](linux/20230911-supervisor-too-many-open-files.md) created_at：2023-09-11
@@ -325,20 +333,20 @@
 >subtitle not define
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
->subtitle not define
-
-
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
->subtitle not define
-
-
 [mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
 >subtitle not define
 
 
 [Git使用记录](other/20170609-git.md) created_at：2017-06-09
 >Git使用记录
+
+
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+>subtitle not define
+
+
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+>subtitle not define
 
 
 ## Recommend Link
