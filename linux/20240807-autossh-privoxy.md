@@ -20,4 +20,5 @@ proxy = +forward-override{forward-socks5 0.0.0.0:7070 .}
 .googleusercontent.com
 .gstatic.com
 .ggpht.com
+.youtubekids.com
 ```
