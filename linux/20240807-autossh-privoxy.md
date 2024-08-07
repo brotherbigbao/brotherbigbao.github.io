@@ -19,4 +19,5 @@ proxy = +forward-override{forward-socks5 0.0.0.0:7070 .}
 .ytimg.com
 .googleusercontent.com
 .gstatic.com
+.ggpht.com
 ```
