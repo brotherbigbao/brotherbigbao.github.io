@@ -129,7 +129,8 @@ if [ -f ~/home_net_restart.txt ]; then
 fi
 
 # 下载远程文件
-wget -O ~/home_net_restart.txt https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/home_net_restart.txt
+#wget -O ~/home_net_restart.txt https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/home_net_restart.txt
+scp liuyibao@YOUR_SERVER_IP:/home/liuyibao/home_net_restart.txt ~/home_net_restart.txt
 
 # 检查文件内容
 if [ "$(cat ~/home_net_restart.txt)" = "1" ]; then
