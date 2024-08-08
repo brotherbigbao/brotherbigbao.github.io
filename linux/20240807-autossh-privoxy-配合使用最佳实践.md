@@ -118,8 +118,6 @@ brew services restart privoxy
 
 crontab 定时拉取远程文件，文件内容是1时，就重启 autossh、privoxy
 
-https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/home_net_restart.txt
-
 ```shell
 #!/bin/bash
 
@@ -128,8 +126,9 @@ if [ -f ~/home_net_restart.txt ]; then
     rm ~/home_net_restart.txt
 fi
 
-# 下载远程文件
+# 下载远程文件 已上传到oss https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/home_net_restart.txt
 #wget -O ~/home_net_restart.txt https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/home_net_restart.txt
+# 直接使用scp更方便修改
 scp liuyibao@YOUR_SERVER_IP:/home/liuyibao/home_net_restart.txt ~/home_net_restart.txt
 
 # 检查文件内容
