@@ -1,7 +1,31 @@
 # privoxy 配合 autossh，由于socks5监听的是0.0.0.0，这里也必须是 0.0.0.0
 > privoxy 配合 autossh
 
-## 最佳实践
+## 最佳实践 autossh
+
+- 新增service, root身份 vim /etc/systemd/system/remote-autossh.service
+
+```shell
+[Unit]
+Description=AutoSSH service for remote tunnel
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=root
+ExecStart=/usr/bin/autossh -M 7090 -NT -D 0.0.0.0:7070 liuyibao@YOUR_SERVER_IP
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+sudo systemctl enable remote-autossh.service
+sudo systemctl start remote-autossh.service
+sudo systemctl status remote-autossh.service
+```
+
+## 最佳实践 privoxy
 
 - 修改 /etc/privoxy/config, 监听ip和端口：
 ```
