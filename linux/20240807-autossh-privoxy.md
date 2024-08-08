@@ -3,20 +3,30 @@
 
 ## 最佳实践
 
-修改 /etc/privoxy/config, 在actionsfile栏添加如下， 引入自定义配置文件：
+- 修改 /etc/privoxy/config, 监听ip和端口：
+```
+listen-address  127.0.0.1:8118
+```
+改成
+
+```
+listen-address  0.0.0.0:8118
+```
+
+- 修改 /etc/privoxy/config, 在actionsfile栏添加如下， 引入自定义配置文件：
 
 ```
 actionsfile whitelist.action # 白名单配置
 ```
 
-新增自定义配置文件
+- 新增自定义配置文件
 
 ```
 cd /etc/privoxy
 vim whitelist.action
 ```
 
-whitelist.action 详细内容
+- whitelist.action 详细内容，根据日志不断添加需要代理的域名
 
 ```
 {{alias}}
@@ -40,15 +50,7 @@ proxy = +forward-override{forward-socks5 0.0.0.0:7070 .}
 .youtubekids.com
 ```
 
-## 配置文件
-
-主配置文件： /etc/privoxy/config
-
-# 默认日志目录：
-
-/var/log/privoxy
-
-# 打开 debug, 将1和1024取消注释即可
+## 打开 debug, 将1和1024取消注释即可(1:记录所有请求 方便检查添加代理域名，1024记录未通过的请求 默认配置会过滤掉广告域名)
 
 debug     1 # Log the destination for each request. See also debug 1024.
 #debug     2 # show each connection status
@@ -62,4 +64,23 @@ debug  1024 # Log the destination for requests Privoxy didn't let through, and t
 #debug  8192 # Non-fatal errors
 #debug 65536 # Log applying actions
 
-注意别忘了关掉日志
+当所有域名都添加好了，注意别忘了关掉日志，防止日志
+
+## 相关常识 Linux
+
+主配置文件：/etc/privoxy/config
+
+默认日志目录：/var/log/privoxy/
+
+## 相关常识 MacOS
+
+```
+brew install privoxy
+brew services start privoxy
+brew services info privoxy
+brew services restart privoxy
+```
+
+主配置文件：/usr/local/etc/privoxy/config
+
+默认日志目录：/usr/local/var/log/privoxy/
