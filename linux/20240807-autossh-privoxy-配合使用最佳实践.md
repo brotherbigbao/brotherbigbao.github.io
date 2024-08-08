@@ -160,14 +160,14 @@ REMOTE_SERVER=liuyibao@YOUR_SERVER_IP
 REMOTE_PATH=/home/liuyibao/
 
 # 执行 ifconfig 命令并将输出保存到本地文件
-ifconfig > mini_pc_ifconfig.txt
+ifconfig > minipc_ifconfig.txt
 
 # 检查 ifconfig 命令是否成功执行
 if [ $? -eq 0 ]; then
     echo "ifconfig command executed successfully."
 
     # 使用 scp 命令将文件传输到远程服务器
-    scp mini_pc_ifconfig.txt ${REMOTE_SERVER}:${REMOTE_PATH}
+    scp minipc_ifconfig.txt ${REMOTE_SERVER}:${REMOTE_PATH}
 
     # 检查 scp 命令是否成功执行
     if [ $? -eq 0 ]; then
