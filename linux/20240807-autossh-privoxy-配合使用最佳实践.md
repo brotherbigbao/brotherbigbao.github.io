@@ -118,6 +118,8 @@ brew services restart privoxy
 
 crontab 定时拉取远程文件，文件内容是1时，就重启 autossh、privoxy
 
+minipc_net_restart.sh
+
 ```shell
 #!/bin/bash
 
@@ -145,6 +147,8 @@ fi
 ```
 
 ## 定期上报本地更新本地ip地址
+
+minipc_ifconfig.sh
 
 ```shell
 #!/bin/bash
