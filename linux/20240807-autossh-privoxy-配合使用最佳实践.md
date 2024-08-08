@@ -121,24 +121,58 @@ crontab 定时拉取远程文件，文件内容是1时，就重启 autossh、pri
 ```shell
 #!/bin/bash
 
+cd ~
+
 # 删除本地文件
-if [ -f ~/home_net_restart.txt ]; then
-    rm ~/home_net_restart.txt
+if [ -f ~/minipc_net_restart.txt ]; then
+    rm ~/minipc_net_restart.txt
 fi
 
-# 下载远程文件 已上传到oss https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/home_net_restart.txt
-#wget -O ~/home_net_restart.txt https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/home_net_restart.txt
+# 下载远程文件 已上传到oss https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/minipc_net_restart.txt
+#wget -O ~/minipc_net_restart.txt https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/minipc_net_restart.txt
 # 直接使用scp更方便修改
-scp liuyibao@YOUR_SERVER_IP:/home/liuyibao/home_net_restart.txt ~/home_net_restart.txt
+scp liuyibao@YOUR_SERVER_IP:/home/liuyibao/minipc_net_restart.txt ~/minipc_net_restart.txt
 
 # 检查文件内容
-if [ "$(cat ~/home_net_restart.txt)" = "1" ]; then
+if [ "$(cat ~/minipc_net_restart.txt)" = "1" ]; then
     # 重启 remote-autossh 服务
     sudo systemctl restart remote-autossh.service
     # 重启 privoxy 服务
     sudo systemctl restart privoxy.service
 else
     echo "File content is not '1', services will not be restarted."
+fi
+```
+
+## 定期上报本地更新本地ip地址
+
+```shell
+#!/bin/bash
+
+cd ~
+
+# 定义远程服务器的信息
+REMOTE_SERVER=liuyibao@YOUR_SERVER_IP
+REMOTE_PATH=/home/liuyibao/
+
+# 执行 ifconfig 命令并将输出保存到本地文件
+ifconfig > mini_pc_ifconfig.txt
+
+# 检查 ifconfig 命令是否成功执行
+if [ $? -eq 0 ]; then
+    echo "ifconfig command executed successfully."
+
+    # 使用 scp 命令将文件传输到远程服务器
+    scp mini_pc_ifconfig.txt ${REMOTE_SERVER}:${REMOTE_PATH}
+
+    # 检查 scp 命令是否成功执行
+    if [ $? -eq 0 ]; then
+        echo "File transferred successfully to the remote server."
+    else
+        echo "Failed to transfer file to the remote server."
+    fi
+else
+    echo "Failed to execute ifconfig command."
 fi
 ```
 
