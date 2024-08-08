@@ -79,7 +79,7 @@ proxy = +forward-override{forward-socks5 0.0.0.0:7070 .}
 .xn--ngstr-lra8j.com #play商店下载会请求这个域名，但是发现这个域名指向的是国内ip，可能是类似下载cdn的东西，暂时不处理，假如play商店下载卡住的话，可以尝试添加这个域名
 ```
 
-## 打开 debug, 将1和1024取消注释即可(1:记录所有请求 方便检查添加代理域名，1024记录未通过的请求 默认配置会过滤掉广告域名)
+## privoxy 打开 debug, 将1和1024取消注释即可(1:记录所有请求 方便检查添加代理域名，1024记录未通过的请求 默认配置会过滤掉广告域名)
 
 debug     1 # Log the destination for each request. See also debug 1024.
 #debug     2 # show each connection status
@@ -95,13 +95,13 @@ debug  1024 # Log the destination for requests Privoxy didn't let through, and t
 
 当所有域名都添加好了，注意别忘了关掉日志，防止日志
 
-## 相关常识 Linux
+## privoxy 相关常识 Linux
 
 主配置文件：/etc/privoxy/config
 
 默认日志目录：/var/log/privoxy/
 
-## 相关常识 MacOS
+## privoxy 相关常识 MacOS
 
 ```
 brew install privoxy
@@ -113,3 +113,33 @@ brew services restart privoxy
 主配置文件：/usr/local/etc/privoxy/config
 
 默认日志目录：/usr/local/var/log/privoxy/
+
+## 远程重启 network 方案
+
+crontab 定时拉取远程文件，文件内容是1时，就重启 autossh、privoxy
+
+https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/home_net_restart.txt
+
+```shell
+#!/bin/bash
+
+# 删除本地文件
+if [ -f ~/home_net_restart.txt ]; then
+    rm ~/home_net_restart.txt
+fi
+
+# 下载远程文件
+wget -O ~/home_net_restart.txt https://openpublic.oss-cn-shanghai.aliyuncs.com/minipc/home_net_restart.txt
+
+# 检查文件内容
+if [ "$(cat ~/home_net_restart.txt)" = "1" ]; then
+    # 重启 remote-autossh 服务
+    sudo systemctl restart remote-autossh.service
+    # 重启 privoxy 服务
+    sudo systemctl restart privoxy.service
+else
+    echo "File content is not '1', services will not be restarted."
+fi
+```
+
+
