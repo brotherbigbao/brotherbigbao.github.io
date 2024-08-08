@@ -50,6 +50,11 @@ proxy = +forward-override{forward-socks5 0.0.0.0:7070 .}
 .youtubekids.com
 ```
 
+- 其它可疑域名
+```shell
+.xn--ngstr-lra8j.com #play商店下载会请求这个域名，但是发现这个域名指向的是国内ip，可能是类似下载cdn的东西，暂时不处理，假如play商店下载卡住的话，可以尝试添加这个域名
+```
+
 ## 打开 debug, 将1和1024取消注释即可(1:记录所有请求 方便检查添加代理域名，1024记录未通过的请求 默认配置会过滤掉广告域名)
 
 debug     1 # Log the destination for each request. See also debug 1024.
