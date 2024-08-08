@@ -2,6 +2,22 @@
 > privoxy 配合 autossh
 
 ## 最佳实践
+
+修改 /etc/privoxy/config, 在actionsfile栏添加如下， 引入自定义配置文件：
+
+```
+actionsfile whitelist.action # 白名单配置
+```
+
+新增自定义配置文件
+
+```
+cd /etc/privoxy
+vim whitelist.action
+```
+
+whitelist.action 详细内容
+
 ```
 {{alias}}
 direct = +forward-override{forward .}
