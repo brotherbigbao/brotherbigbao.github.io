@@ -164,7 +164,7 @@ minipc_net_restart_auto.sh
 sleep 39
 cd ~
 systemctl restart remote-autossh.service
-sleep 3
+sleep 7
 # 重启 privoxy 服务
 systemctl restart privoxy.service
 echo "restart done."
