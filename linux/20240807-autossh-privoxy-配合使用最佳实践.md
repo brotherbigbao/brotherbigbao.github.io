@@ -189,4 +189,42 @@ else
 fi
 ```
 
+# 定期上传并清空日志
+
+minipc_privoxy_log.sh
+
+*/30 * * * * /root/minipc_privoxy_log.sh
+
+```shell
+#!/bin/bash
+
+# 定义远程服务器的信息
+REMOTE_HOST="liuyibao@YOUR_SERVER_IP"
+REMOTE_PATH="/home/liuyibao/"
+LOCAL_FILE="/var/log/privoxy/logfile"
+
+# 获取当前日期和时间
+CURRENT_DATE_TIME=$(date '+%Y%m%d%H%M%S')
+
+# 构建远程文件的完整路径
+REMOTE_FILE="${REMOTE_PATH}logfile.${CURRENT_DATE_TIME}.txt"
+
+# 检查本地文件是否存在
+if [ -f "$LOCAL_FILE" ]; then
+    # SCP 传输文件到远程服务器
+    scp "$LOCAL_FILE" "$REMOTE_HOST:$REMOTE_FILE"
+    
+    # 检查 SCP 传输是否成功
+    if [ $? -eq 0 ]; then
+        # 清空本地文件的内容
+        > "$LOCAL_FILE"
+        echo "File transferred successfully and local file cleared."
+    else
+        echo "SCP transfer failed."
+    fi
+else
+    echo "Local file does not exist."
+fi
+```
+
 
