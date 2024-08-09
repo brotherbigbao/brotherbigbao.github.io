@@ -142,9 +142,10 @@ scp liuyibao@YOUR_SERVER_IP:/home/liuyibao/minipc_net_restart.txt ~/minipc_net_r
 # 检查文件内容
 if [ "$(cat ~/minipc_net_restart.txt)" = "1" ]; then
     # 重启 remote-autossh 服务
-    sudo systemctl restart remote-autossh.service
+    systemctl restart remote-autossh.service
     # 重启 privoxy 服务
-    sudo systemctl restart privoxy.service
+    systemctl restart privoxy.service
+    echo "restart done."
 else
     echo "File content is not '1', services will not be restarted."
 fi
