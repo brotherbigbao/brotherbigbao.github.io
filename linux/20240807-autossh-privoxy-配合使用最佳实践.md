@@ -125,7 +125,7 @@ minipc_net_restart.sh
 ```shell
 #!/bin/bash
 
-sleep 26
+sleep 33
 
 cd ~
 
@@ -143,6 +143,7 @@ scp liuyibao@YOUR_SERVER_IP:/home/liuyibao/minipc_net_restart.txt ~/minipc_net_r
 if [ "$(cat ~/minipc_net_restart.txt)" = "1" ]; then
     # 重启 remote-autossh 服务
     systemctl restart remote-autossh.service
+    sleep 10
     # 重启 privoxy 服务
     systemctl restart privoxy.service
     echo "restart done."
