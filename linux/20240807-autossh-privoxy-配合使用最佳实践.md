@@ -152,6 +152,24 @@ else
 fi
 ```
 
+## 定时重启
+
+minipc_net_restart_auto.sh
+
+0 */3 * * * /root/minipc_net_restart_auto.sh
+
+```shell
+#!/bin/bash
+
+sleep 39
+cd ~
+systemctl restart remote-autossh.service
+sleep 3
+# 重启 privoxy 服务
+systemctl restart privoxy.service
+echo "restart done."
+```
+
 ## 定期上报本地更新本地ip地址
 
 minipc_ifconfig.sh
