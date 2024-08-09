@@ -14,6 +14,8 @@ Wants=network-online.target
 [Service]
 User=root
 ExecStart=/usr/bin/autossh -M 7090 -NT -D 0.0.0.0:7070 liuyibao@YOUR_SERVER_IP
+Restart=always
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
