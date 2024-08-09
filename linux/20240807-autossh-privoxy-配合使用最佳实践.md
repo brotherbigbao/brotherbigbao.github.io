@@ -257,3 +257,5 @@ fi
 */5 * * * * /root/minipc_ifconfig.sh >> /root/log_minipc_ifconfig.log 2>&1
 */30 * * * * /root/minipc_privoxy_log.sh >> /root/log_minipc_privoxy_log.log 2>&1
 ```
+
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
