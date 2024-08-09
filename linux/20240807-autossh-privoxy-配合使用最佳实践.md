@@ -246,3 +246,12 @@ fi
 ```
 
 
+## 最终crontab配置情况
+
+```
+# m h  dom mon dow   command
+*/3 * * * * /root/minipc_net_restart.sh >> /root/log_minipc_net_restart.log 2>&1
+0 */3 * * * /root/minipc_net_restart_auto.sh >> /root/log_minipc_net_restart_auto.log 2>&1
+*/5 * * * * /root/minipc_ifconfig.sh >> /root/log_minipc_ifconfig.log 2>&1
+*/30 * * * * /root/minipc_privoxy_log.sh >> /root/log_minipc_privoxy_log.log 2>&1
+```
