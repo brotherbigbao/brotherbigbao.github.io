@@ -125,6 +125,8 @@ minipc_net_restart.sh
 ```shell
 #!/bin/bash
 
+sleep 26
+
 cd ~
 
 # 删除本地文件
@@ -157,6 +159,7 @@ minipc_ifconfig.sh
 ```shell
 #!/bin/bash
 
+sleep 47
 cd ~
 
 # 定义远程服务器的信息
