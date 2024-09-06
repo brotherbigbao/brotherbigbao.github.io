@@ -16,7 +16,7 @@ pycharm 和 idea 有免费版，其他产品没有。可以使用收费版，选
 试用授权文件位于程序配置目录下的 eval 文件夹。
 
 - windows：%userprofile%/AppData/Roaming/JetBrains/产品名版本号
-- macos: ~/Library/ApplicationSupport/JetBrains/产品名版本号
+- macos: ~/Library/Application\ Support/JetBrains/产品名版本号
 - linux: ~/.config/JetBrains/产品名版本号
 
 将程序配置路径下的 eval 文件夹 重命名或者删除后，重启程序即可。
