@@ -1,4 +1,5 @@
-# iTerm2
+# iTerm2 Profile 跳板机情况下配置快捷方式
+> iterm2 profile 跳板机配置
 
 ## General
 
