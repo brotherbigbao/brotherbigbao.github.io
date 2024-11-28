@@ -1,6 +1,10 @@
 ![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
 
 ## Blog
+[windows开机启动脚本配置](windows/20241128-windows开机启动脚本配置.md) created_at：2024-11-28
+>windows开机启动脚本配置
+
+
 [VMware pro 17 安装 Ubuntu 24 的各种问题](linux/20241127-VMwarePro17安装Ubuntu24的各种问题.md) created_at：2024-11-27
 >VMware pro 17 安装 Ubuntu 24 的各种问题
 
@@ -17,12 +21,12 @@
 >使用 systemd
 
 
-[autossh 使用](linux/20240807-autossh.md) created_at：2024-08-07
->autossh 使用
-
-
 [privoxy 配合 autossh，由于socks5监听的是0.0.0.0，这里也必须是 0.0.0.0](linux/20240807-autossh-privoxy-配合使用最佳实践.md) created_at：2024-08-07
 >privoxy 配合 autossh
+
+
+[autossh 使用](linux/20240807-autossh.md) created_at：2024-08-07
+>autossh 使用
 
 
 [iTerm2 Profile 跳板机情况下配置快捷方式](other/20240718-macos-iterm2-profiles.md) created_at：2024-07-18
@@ -65,12 +69,12 @@
 >输入法不跟随问题
 
 
-[stty 设置终端快捷键](linux/20231010-stty设置终端快捷键.md) created_at：2023-10-10
->尽量和macos键位保持一致
-
-
 [Linux Ubuntu22.04 Android模拟器 麟卓卓懿](linux/20231010-linux-android-vm-麟卓卓懿.md) created_at：2023-10-10
 >安装后无法打开解决
+
+
+[stty 设置终端快捷键](linux/20231010-stty设置终端快捷键.md) created_at：2023-10-10
+>尽量和macos键位保持一致
 
 
 [usermod 禁用登录账户](linux/20230927-usermod-禁用登录账户.md) created_at：2023-09-27
@@ -81,12 +85,12 @@
 >PocketMine MP 插件开发学习记录
 
 
-[Github Personal access token](linux/20230915-github-personal-access-token.md) created_at：2023-09-15
->git clone https 路径的项目时可能会需要
-
-
 [Linux 下的代理工具  privoxy, proxychains, tor](linux/20230915-linux-proxy-tool.md) created_at：2023-09-15
 >privoxy, proxychains, tor 哪个更好用呢
+
+
+[Github Personal access token](linux/20230915-github-personal-access-token.md) created_at：2023-09-15
+>git clone https 路径的项目时可能会需要
 
 
 [dep ensure 失败， fatal: could not read Username for 'https://github.com'， ERROR: Repository `go-xorm/xorm' is disabled.](linux/20230915-github仓库归档导致golang dep无法使用.md) created_at：2023-09-15
@@ -173,12 +177,12 @@
 >php-fpm并不是每次请求就销毁
 
 
-[yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
->yii2中mysql并没有重连机制 需要手动修改
-
-
 [yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
 >原因是yii2-queue 取到一条消息后，会fork子进程
+
+
+[yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
+>yii2中mysql并没有重连机制 需要手动修改
 
 
 [grep 的使用](linux/20210414-grep.md) created_at：2021-04-14
@@ -341,12 +345,12 @@
 >subtitle not define
 
 
-[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
->转自: 《Mastering NGINX》Second Edition
-
-
 [location 匹配规则](nginx/20170915-nginx-location.md) created_at：2017-09-15
 >转自：https://moonbingbing.gitbooks.io/openresty-best-practices/ngx/nginx_local_pcre.html or https://github.com/moonbingbing/openresty-best-practices
+
+
+[Nginx reverse proxying](nginx/20170915-reverse-proxying.md) created_at：2017-09-15
+>转自: 《Mastering NGINX》Second Edition
 
 
 [homebrew 操作指南](homebrew/20170824-homebrew.md) created_at：2017-08-24
@@ -357,15 +361,7 @@
 >mysql使用记录
 
 
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
->subtitle not define
-
-
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
->subtitle not define
-
-
-[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
 
@@ -373,7 +369,15 @@
 >Git使用记录
 
 
-[xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
+[mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
+>subtitle not define
+
+
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+>subtitle not define
+
+
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
