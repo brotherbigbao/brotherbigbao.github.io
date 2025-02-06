@@ -128,7 +128,7 @@ ProxyCommand connect -S 127.0.0.1:7890 %h %p
 
 > kex_exchange_identification: Connection closed by remote host
 
-所以如果 22 端口不畅就使用 443，安全稳定可靠。ps: 22 端口时 hostname 请填 github.com。这部分请扩展阅读 此文 。
+所以如果 22 端口不畅就使用 443，安全稳定可靠。ps: 22 端口时 hostname 请填 github.com。这部分请扩展阅读 [此文](https://docs.github.com/cn/authentication/troubleshooting-ssh/using-ssh-over-the-https-port) 。
 
 ## Q&A 2
 
