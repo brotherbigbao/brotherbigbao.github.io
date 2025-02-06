@@ -77,11 +77,22 @@ proxy = socks5://127.0.0.1:7890
 $ cat ~/.ssh/config
 
 Host github.com
-Hostname ssh.github.com
-IdentityFile /xxx/.ssh/github_id_rsa
-User git
-Port 443
-ProxyCommand nc -v -x 127.0.0.1:7890 %h %p
+  Hostname ssh.github.com
+  IdentityFile /xxx/.ssh/github_id_rsa
+  User git
+  Port 443
+  ProxyCommand nc -v -x 127.0.0.1:7890 %h %p
+```
+
+或
+
+```
+Host github.com
+  Hostname github.com
+  IdentityFile /Users/liuyibao/.ssh/id_rsa
+  User git
+  Port 22
+  ProxyCommand nc -v -x 127.0.0.1:7070 %h %p
 ```
 
 nc 就是 netcat，引用一段描述
@@ -120,11 +131,11 @@ Win 下的配置写法如下
 $ cat ~/.ssh/config
 
 Host github.com
-Hostname ssh.github.com
-IdentityFile /c/users/xxx/.ssh/github_id_rsa
-User git
-Port 443
-ProxyCommand connect -S 127.0.0.1:7890 %h %p
+  Hostname ssh.github.com
+  IdentityFile /c/users/xxx/.ssh/github_id_rsa
+  User git
+  Port 443
+  ProxyCommand connect -S 127.0.0.1:7890 %h %p
 ```
 
 # 补充信息
