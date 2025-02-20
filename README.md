@@ -1,6 +1,10 @@
 ![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
 
 ## Blog
+[Mac或Linux git ssh 代理办法](linux/20250206-mac-linux-git-ssh-proxy.md) created_at：2025-02-06
+>git ssh 方式代理办法
+
+
 [windows开机启动脚本配置](windows/20241128-windows开机启动脚本配置.md) created_at：2024-11-28
 >windows开机启动脚本配置
 
@@ -21,12 +25,12 @@
 >使用 systemd
 
 
-[privoxy 配合 autossh，由于socks5监听的是0.0.0.0，这里也必须是 0.0.0.0](linux/20240807-autossh-privoxy-配合使用最佳实践.md) created_at：2024-08-07
->privoxy 配合 autossh
-
-
 [autossh 使用](linux/20240807-autossh.md) created_at：2024-08-07
 >autossh 使用
+
+
+[privoxy 配合 autossh，由于socks5监听的是0.0.0.0，这里也必须是 0.0.0.0](linux/20240807-autossh-privoxy-配合使用最佳实践.md) created_at：2024-08-07
+>privoxy 配合 autossh
 
 
 [iTerm2 Profile 跳板机情况下配置快捷方式](other/20240718-macos-iterm2-profiles.md) created_at：2024-07-18
@@ -85,16 +89,16 @@
 >PocketMine MP 插件开发学习记录
 
 
-[Linux 下的代理工具  privoxy, proxychains, tor](linux/20230915-linux-proxy-tool.md) created_at：2023-09-15
->privoxy, proxychains, tor 哪个更好用呢
-
-
 [Github Personal access token](linux/20230915-github-personal-access-token.md) created_at：2023-09-15
 >git clone https 路径的项目时可能会需要
 
 
 [dep ensure 失败， fatal: could not read Username for 'https://github.com'， ERROR: Repository `go-xorm/xorm' is disabled.](linux/20230915-github仓库归档导致golang dep无法使用.md) created_at：2023-09-15
 >github 仓库被归档， 导致golang dep 更新信赖失败
+
+
+[Linux 下的代理工具  privoxy, proxychains, tor](linux/20230915-linux-proxy-tool.md) created_at：2023-09-15
+>privoxy, proxychains, tor 哪个更好用呢
 
 
 [go程序托管 supervisor 遇到 too many open files](linux/20230911-supervisor-too-many-open-files.md) created_at：2023-09-11
@@ -177,12 +181,12 @@
 >php-fpm并不是每次请求就销毁
 
 
-[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
->原因是yii2-queue 取到一条消息后，会fork子进程
-
-
 [yii2 mysql 重连](php/20210420-yii-mysql-connect.md) created_at：2021-04-20
 >yii2中mysql并没有重连机制 需要手动修改
+
+
+[yii2-queue 消费太慢](php/20210420-yii2-queue-too-slow.md) created_at：2021-04-20
+>原因是yii2-queue 取到一条消息后，会fork子进程
 
 
 [grep 的使用](linux/20210414-grep.md) created_at：2021-04-14
@@ -361,6 +365,14 @@
 >mysql使用记录
 
 
+[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
+>subtitle not define
+
+
+[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
+>subtitle not define
+
+
 [xdebug日常使用](php/20170609-xdebug.md) created_at：2017-06-09
 >subtitle not define
 
@@ -370,14 +382,6 @@
 
 
 [mac os 使用技巧](other/20170609-macos.md) created_at：2017-06-09
->subtitle not define
-
-
-[laravel日常使用](php/20170609-laravel.md) created_at：2017-06-09
->subtitle not define
-
-
-[composer日常使用](php/20170609-composer.md) created_at：2017-06-09
 >subtitle not define
 
 
