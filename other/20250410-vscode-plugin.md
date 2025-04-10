@@ -14,3 +14,5 @@ PHP Namespace Resolver - Mehedi Hassan
 PHP Refactor Tool - Son Tung PHAM
 
 Terminal - Jun Han
+
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
