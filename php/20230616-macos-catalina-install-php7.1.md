@@ -125,4 +125,89 @@ Extension ssh2 enabled in php.ini
 
 扩展安装成功，配置文件也自动更改了
 
+## 2025年在 macos15上也安装成功
+
+macos15 不需要安装 curl，直接就可以安装成功，非常顺利
+
+```
+==> Installing shivammathur/php/php@7.1
+==> Pouring php@7.1--7.1.33_13.ventura.bottle.1.tar.gz
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set php_ini /usr/local/etc/php/7.1/php.ini system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set php_dir /usr/local/share/pear@7.1 system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set doc_dir /usr/local/share/pear@7.1/doc system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set ext_dir /usr/local/lib/php/pecl/20160303 system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set bin_dir /usr/local/opt/php@7.1/bin system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set data_dir /usr/local/share/pear@7.1/data system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set cfg_dir /usr/local/share/pear@7.1/cfg system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set www_dir /usr/local/share/pear@7.1/htdocs system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set man_dir /usr/local/share/man system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set test_dir /usr/local/share/pear@7.1/test system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear config-set php_bin /usr/local/opt/php@7.1/bin/php system
+==> /usr/local/Cellar/php@7.1/7.1.33_13/bin/pear update-channels
+==> Caveats
+To enable PHP in Apache add the following to httpd.conf and restart Apache:
+    LoadModule php7_module /usr/local/opt/php@7.1/lib/httpd/modules/libphp7.so
+
+    <FilesMatch \.php$>
+        SetHandler application/x-httpd-php
+    </FilesMatch>
+
+Finally, check DirectoryIndex includes index.php
+    DirectoryIndex index.php index.html
+
+The php.ini and php-fpm.ini file can be found in:
+    /usr/local/etc/php/7.1/
+
+php@7.1 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have php@7.1 first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/php@7.1/bin:$PATH"' >> ~/.zshrc
+  echo 'export PATH="/usr/local/opt/php@7.1/sbin:$PATH"' >> ~/.zshrc
+
+For compilers to find php@7.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/php@7.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/php@7.1/include"
+
+To start shivammathur/php/php@7.1 now and restart at login:
+  brew services start shivammathur/php/php@7.1
+Or, if you don't want/need a background service you can just run:
+  /usr/local/opt/php@7.1/sbin/php-fpm --nodaemonize
+==> Summary
+🍺  /usr/local/Cellar/php@7.1/7.1.33_13: 503 files, 61.2MB
+==> Running `brew cleanup php@7.1`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> php@7.1
+To enable PHP in Apache add the following to httpd.conf and restart Apache:
+    LoadModule php7_module /usr/local/opt/php@7.1/lib/httpd/modules/libphp7.so
+
+    <FilesMatch \.php$>
+        SetHandler application/x-httpd-php
+    </FilesMatch>
+
+Finally, check DirectoryIndex includes index.php
+    DirectoryIndex index.php index.html
+
+The php.ini and php-fpm.ini file can be found in:
+    /usr/local/etc/php/7.1/
+
+php@7.1 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have php@7.1 first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/php@7.1/bin:$PATH"' >> ~/.zshrc
+  echo 'export PATH="/usr/local/opt/php@7.1/sbin:$PATH"' >> ~/.zshrc
+
+For compilers to find php@7.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/php@7.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/php@7.1/include"
+
+To start shivammathur/php/php@7.1 now and restart at login:
+  brew services start shivammathur/php/php@7.1
+Or, if you don't want/need a background service you can just run:
+  /usr/local/opt/php@7.1/sbin/php-fpm --nodaemonize
+```
+
 ![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
