@@ -10,3 +10,5 @@ https://jingyan.baidu.com/article/1974b2898523bbb5b1f774e2.html
 Firefox国际版上登录本地服务_firefox总是登陆国际账号_门前塘的博客-CSDN博客
 
 原文链接：https://blog.csdn.net/sinat_30603081/article/details/137330738
+
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)

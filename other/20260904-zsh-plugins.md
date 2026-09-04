@@ -22,3 +22,5 @@ plugins=(
 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
+
+![Visitor Count](https://profile-counter.glitch.me/brotherbigbao/count.svg)
