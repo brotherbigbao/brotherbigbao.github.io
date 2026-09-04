@@ -1,6 +1,7 @@
 # zsh 插件  使用 oh-my-zsh管理
+> 目前 macos默认已经是 zsh，只需要安装 oh-my-zsh 即可
 
-# 这2个好用的zsh插件
+## 这2个好用的zsh插件
 
 zsh-syntax-highlighting zsh-autosuggestions
 
